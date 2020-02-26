@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{DC6F8B35-A290-8F26-3F96-52424110A9FF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/characterController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/characterController.cs" Line="29" Column="1" />
+      <File FileName="Assets/player.cs" Line="26" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ECS657U Multi-platform GameDevelopment" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="characterController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d93e4a58-2f51-468e-b5f7-818a85ca66a2" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
