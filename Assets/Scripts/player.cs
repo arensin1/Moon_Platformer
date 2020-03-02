@@ -20,6 +20,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //getting user input for jump and horizontal movement
         hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
         
         if (Input.GetButtonDown("Jump"))
@@ -30,6 +31,7 @@ public class player : MonoBehaviour
 
     void FixedUpdate()
     {
+        //using function to move player
         controller.Move(hori * Time.fixedDeltaTime, jump);
         jump = false;
     }
