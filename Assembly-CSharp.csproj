@@ -66,7 +66,6 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\characterController.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
-    <Compile Include="Assets\Scripts\scrolling.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/youngjie/Desktop/2020 LONDON/Game Development/ECS657U Multi-platform GameDevelopment/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
