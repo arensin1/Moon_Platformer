@@ -403,22 +403,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74c068bc5665e4e7ba86430809b24538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 400
   m_MovementSmoothing: 0.05
-  m_AirControl: 0
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_GroundCheck: {fileID: 629406976}
-  m_CeilingCheck: {fileID: 937606359}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!50 &412189698
 Rigidbody2D:
   serializedVersion: 4
@@ -694,6 +684,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1796774336}
   - {fileID: 1160466089}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -712,7 +703,7 @@ GameObject:
   - component: {fileID: 1160466092}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -727,10 +718,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.5, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1796774336}
+  m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1160466090
 TilemapRenderer:
@@ -1794,23 +1784,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1160466089}
+    m_TransformParent: {fileID: 976184747}
     m_Modifications:
     - target: {fileID: 1000012694342922, guid: 99c920e9fd5e64268a80e8f7a3fc7f45, type: 3}
       propertyPath: m_Name
-      value: Flower_Small_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012694342922, guid: 99c920e9fd5e64268a80e8f7a3fc7f45, type: 3}
-      propertyPath: m_TagString
       value: Flower
       objectReference: {fileID: 0}
     - target: {fileID: 4000011495721388, guid: 99c920e9fd5e64268a80e8f7a3fc7f45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.5
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4000011495721388, guid: 99c920e9fd5e64268a80e8f7a3fc7f45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.3
+      value: 10.3
       objectReference: {fileID: 0}
     - target: {fileID: 4000011495721388, guid: 99c920e9fd5e64268a80e8f7a3fc7f45, type: 3}
       propertyPath: m_LocalPosition.z

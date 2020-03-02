@@ -8,6 +8,7 @@ public class player : MonoBehaviour
     public float runningSpeed = 40f;
     float hori = 0f;
     bool jump = false;
+
     
 
     // Start is called before the first frame update
@@ -32,4 +33,5 @@ public class player : MonoBehaviour
         controller.Move(hori * Time.fixedDeltaTime, jump);
         jump = false;
     }
+
 }
