@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{DC6F8B35-A290-8F26-3F96-52424110A9FF}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/characterController.cs">
     <Files>
-      <File FileName="Assets/Scripts/characterController.cs" Line="63" Column="20" />
+      <File FileName="Assets/Scripts/characterController.cs" Line="19" Column="1" />
       <File FileName="Assets/Scripts/player.cs" />
-      <File FileName="Assets/Scripts/CameraFollow.cs" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
