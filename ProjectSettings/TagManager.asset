@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Datalog
+  - DatalogCheck
   layers:
   - Default
   - TransparentFX

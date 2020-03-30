@@ -12,7 +12,7 @@ public class characterController : MonoBehaviour
      Collision2D collision; 
      public bool obj_Complete = false; //setting objective to not complete
      public GameController gameController;
-   
+    
 
 
     private void Awake()
