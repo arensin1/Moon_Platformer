@@ -14,9 +14,9 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       uiText.text = "Goal: Find the Flower";
+       uiText.text = "Goal: Find the Datalog";
 	   timeText.text = "Time Left: ";
-       timeLeft = 40.0f;
+       timeLeft = 100.0f;
        timechange = true;
     }
     void FixedUpdate()

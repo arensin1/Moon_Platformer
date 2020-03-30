@@ -34,8 +34,8 @@ public class characterController : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        //when we interact with flower, the flower will dissapear and objective is complete
-            if (other.gameObject.CompareTag ("Flower"))
+        //when we interact with the datalog, the datalog will dissapear and objective is complete
+            if (other.gameObject.CompareTag ("Datalog"))
             {
                 other.gameObject.SetActive(false);
                 obj_Complete = true;
