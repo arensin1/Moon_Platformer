@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Datalog
   - DatalogCheck
+  - Flower
+  - ConnectionTower
   layers:
   - Default
   - TransparentFX
