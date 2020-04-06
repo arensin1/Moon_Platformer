@@ -12,7 +12,8 @@ public class characterController : MonoBehaviour
      Collision2D collision; 
      public bool obj_Complete = false; //setting objective to not complete
      public GameController gameController;
-    
+    private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+
 
 
     private void Awake()
@@ -52,7 +53,19 @@ public class characterController : MonoBehaviour
        
         ourRigidbody.velocity = Vector3.SmoothDamp(ourRigidbody.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
-     
+        // If the input is moving the player right and the player is facing left...
+        if (move > 0 && !m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (move < 0 && m_FacingRight)
+        {
+            // ... flip the player.
+            Flip();
+        }
+
         // If the player should jump...
         if (m_Grounded && jump)
         {
@@ -64,5 +77,14 @@ public class characterController : MonoBehaviour
         }
     }
 
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        m_FacingRight = !m_FacingRight;
 
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
 }
