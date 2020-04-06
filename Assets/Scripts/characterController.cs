@@ -6,6 +6,11 @@ public class characterController : MonoBehaviour
 {
     public Rigidbody2D ourRigidbody; //rigid body used for player physics
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f; //smoothing rate
+
+                       // A mask determining what is ground to the character
+    [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
+    [SerializeField] private Transform m_CeilingCheck;
+
     private float m_JumpForce = 400f; //jump force
     private bool m_Grounded = false;  //boolean if character is grounded
     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
@@ -13,23 +18,27 @@ public class characterController : MonoBehaviour
     public bool obj_Complete = false; //setting objective to not complete
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-
+    public UnityEvent OnLandEvent;
 
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
         //getting component for our rigid body
+        if (OnLandEvent == null)
+            OnLandEvent = new UnityEvent();
 
     }
 
+
     
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if we collide with the ground set grounded to true
         if(collision.collider.tag == "Ground")
         {
             m_Grounded = true;
-        
+            OnLandEvent.Invoke();
         }
     }
 

@@ -9,7 +9,7 @@ public class player : MonoBehaviour
     float hori = 0f;
     bool jump = false;
     public Animator animator;
-    
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,13 @@ public class player : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("isJumping", true);
         }
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("isJumping", false); //when the jumping animation should end.
     }
 
     void FixedUpdate()
