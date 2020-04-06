@@ -613,6 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 412189697}
   runningSpeed: 40
+  animator: {fileID: 412189702}
 --- !u!95 &412189702
 Animator:
   serializedVersion: 3
@@ -623,7 +624,7 @@ Animator:
   m_GameObject: {fileID: 412189694}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a35be49ce0dd74620a9a7a8f3925e4a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: b22c8b513a1db4e6bbfdce39d8222207, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

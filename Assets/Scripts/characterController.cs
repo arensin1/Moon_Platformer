@@ -4,16 +4,15 @@ using UnityEngine.Events;
 
 public class characterController : MonoBehaviour
 {
-     public Rigidbody2D ourRigidbody; //rigid body used for player physics
-     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f; //smoothing rate
-     private float m_JumpForce = 400f; //jump force
-     private bool m_Grounded = false;  //boolean if character is grounded
-     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
-     Collision2D collision; 
-     public bool obj_Complete = false; //setting objective to not complete
-     public GameController gameController;
+    public Rigidbody2D ourRigidbody; //rigid body used for player physics
+    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f; //smoothing rate
+    private float m_JumpForce = 400f; //jump force
+    private bool m_Grounded = false;  //boolean if character is grounded
+    private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
+    Collision2D collision; 
+    public bool obj_Complete = false; //setting objective to not complete
+    public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-
 
 
     private void Awake()

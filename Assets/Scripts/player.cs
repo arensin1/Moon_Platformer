@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     public float runningSpeed = 40f;
     float hori = 0f;
     bool jump = false;
-
+    public Animator animator;
     
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class player : MonoBehaviour
     {
         //getting user input for jump and horizontal movement
         hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
-        
+        animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
