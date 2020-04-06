@@ -271,7 +271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiText: {fileID: 1482084918}
-  player: {fileID: 412189697}
+  characterController: {fileID: 412189697}
+  player: {fileID: 412189701}
   timeText: {fileID: 1981494747}
 --- !u!1 &308044139
 GameObject:
@@ -534,9 +535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ourRigidbody: {fileID: 0}
   m_MovementSmoothing: 0.05
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
   m_GroundCheck: {fileID: 629406976}
   m_CeilingCheck: {fileID: 937606359}
   obj_Complete: 0

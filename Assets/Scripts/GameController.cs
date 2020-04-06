@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public Text uiText;
-    public characterController player;
+    public characterController characterController;
     private float timeLeft;
+    public player player;
 	public Text timeText;
     bool timechange; // to check when we have to keep run the timer
+    Animator m_Animator;
 
     // Start is called before the first frame update
     void Start()
@@ -18,29 +20,29 @@ public class GameController : MonoBehaviour
 	   timeText.text = "Time Left: ";
        timeLeft = 100.0f;
        timechange = true;
+       m_Animator = player.GetComponent<Animator>();
     }
     void FixedUpdate()
     {
         if (timechange){
             timeLeft -= Time.deltaTime;
 		    timeText.text = "Time Left: " + timeLeft.ToString();
-            if (timeLeft<0){
-                timechange = false;
+            if (timeLeft<=0){
+                stoppingTheGame();
                 timeText.text = "00;00";
                 uiText.text = "Time's Up : (";
                 Color newColor = new Color(1,0,0,1);
                 uiText.color = newColor;
-                player.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
             }
         }
     }
     // win situation
     public void winSituation()
     {
-        if(player.obj_Complete){
-			uiText.text = "Good Job :)";
-            player.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
-            timechange = false;
+        if(characterController.obj_Complete){
+            stoppingTheGame();
+            uiText.text = "Good Job :)";
+            
         }
 
     }
@@ -49,12 +51,21 @@ public class GameController : MonoBehaviour
     //lost situation 2 (on top of this code) : time's up
     public void loseSituation()
     {
-        if(player.ourRigidbody.position.y < -6){
-			uiText.text = "Aww you died :(";
+        if(characterController.ourRigidbody.position.y < -6){
+            stoppingTheGame();
+            uiText.text = "Aww you died :(";
             Color newColor = new Color(1,0,0,1);
             uiText.color = newColor;
-            player.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
-            timechange = false;
+            
         }
+    }
+
+    public void stoppingTheGame()
+    {
+        characterController.endOfGame = true;
+        timechange = false;
+        m_Animator.GetComponent<Animator>().enabled = false;
+        characterController.endOfGame = true;
+        characterController.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
     }
 }

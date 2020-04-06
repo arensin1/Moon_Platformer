@@ -1,14 +1,22 @@
-﻿<Properties StartupConfiguration="{DC6F8B35-A290-8F26-3F96-52424110A9FF}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/characterController.cs">
     <Files>
-      <File FileName="Assets/Scripts/characterController.cs" Line="15" Column="101" />
-      <File FileName="Assets/Scripts/player.cs" />
+      <File FileName="Assets/Scripts/characterController.cs" Line="12" Column="55" />
       <File FileName="Assets/Scripts/CameraFollow.cs" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="58" Column="65" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ECS657U Multi-platform GameDevelopment" expanded="True" selected="True" />
+          <Node name="ECS657U Multi-platform GameDevelopment" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="characterController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

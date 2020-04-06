@@ -19,6 +19,7 @@ public class characterController : MonoBehaviour
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
+    public bool endOfGame = false;
 
     private void Awake()
     {
@@ -52,47 +53,53 @@ public class characterController : MonoBehaviour
         }
     public void Move(float move, bool jump)
     {
-        //check the win and lose situation
-        gameController.winSituation();
-        gameController.loseSituation();
-        
-        //setting up horizontal movement
-        Vector3 targetVelocity = new Vector2(move * 10f, ourRigidbody.velocity.y);
-       
-        ourRigidbody.velocity = Vector3.SmoothDamp(ourRigidbody.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
-
-        // If the input is moving the player right and the player is facing left...
-        if (move > 0 && !m_FacingRight)
+        if (!endOfGame)
         {
-            // ... flip the player.
-            Flip();
-        }
-        // Otherwise if the input is moving the player left and the player is facing right...
-        else if (move < 0 && m_FacingRight)
-        {
-            // ... flip the player.
-            Flip();
-        }
+            //check the win and lose situation
+            gameController.winSituation();
+            gameController.loseSituation();
 
-        // If the player should jump...
-        if (m_Grounded && jump)
-        {
-            // Add a vertical force to the player.
-            m_Grounded = false;
+            //setting up horizontal movement
+            Vector3 targetVelocity = new Vector2(move * 10f, ourRigidbody.velocity.y);
+
+            ourRigidbody.velocity = Vector3.SmoothDamp(ourRigidbody.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
+            // If the input is moving the player right and the player is facing left...
+            if (move > 0 && !m_FacingRight)
+            {
+                // ... flip the player.
+                Flip();
+            }
+            // Otherwise if the input is moving the player left and the player is facing right...
+            else if (move < 0 && m_FacingRight)
+            {
+                // ... flip the player.
+                Flip();
+            }
+
+            // If the player should jump...
+            if (m_Grounded && jump)
+            {
+                // Add a vertical force to the player.
+                m_Grounded = false;
 
 
-            ourRigidbody.AddForce(new Vector2(0f, m_JumpForce));
+                ourRigidbody.AddForce(new Vector2(0f, m_JumpForce));
+            }
         }
     }
 
     private void Flip()
     {
-        // Switch the way the player is labelled as facing.
-        m_FacingRight = !m_FacingRight;
+        if(!endOfGame)
+        {
+            // Switch the way the player is labelled as facing.
+            m_FacingRight = !m_FacingRight;
 
-        // Multiply the player's x local scale by -1.
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+            // Multiply the player's x local scale by -1.
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
     }
 }
