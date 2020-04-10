@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour
     //lost situation 2 (on top of this code) : time's up
     public void loseSituation()
     {
-        if(characterController.ourRigidbody.position.y < -6){
+        if(characterController.ourRigidbody.position.y < -30){
             stoppingTheGame();
             uiText.text = "Aww you died :(";
             Color newColor = new Color(1,0,0,1);

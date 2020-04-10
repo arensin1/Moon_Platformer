@@ -44,8 +44,13 @@ public class characterController : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        //when we interact with the datalog, the datalog will dissapear and objective is complete
+        //when we interact with the datalog, the datalog will dissapear and we'll find the clue
             if (other.gameObject.CompareTag ("Datalog"))
+            {
+                other.gameObject.SetActive(false);
+                //should read or show clue here
+            }
+            else if (other.gameObject.CompareTag("objective"))
             {
                 other.gameObject.SetActive(false);
                 obj_Complete = true;
