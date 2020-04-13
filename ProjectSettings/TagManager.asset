@@ -20,7 +20,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - UI board
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: bushy bush
     uniqueID: 2889573217
+    locked: 0
+  - name: UI board
+    uniqueID: 530456505
     locked: 0
