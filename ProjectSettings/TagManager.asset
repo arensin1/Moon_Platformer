@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Datalog
-  - DatalogCheck
-  - Flower
-  - ConnectionTower
-  - objective
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - UI board
+  - 
+  - 
   - 
   - 
   - 
@@ -44,21 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: background
-    uniqueID: 2905789317
-    locked: 0
-  - name: tile map
-    uniqueID: 2090872231
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: player
-    uniqueID: 2520012309
-    locked: 0
-  - name: bushy bush
-    uniqueID: 2889573217
-    locked: 0
-  - name: UI board
-    uniqueID: 530456505
     locked: 0

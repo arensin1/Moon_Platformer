@@ -10,13 +10,14 @@ public class GameController : MonoBehaviour
     private float timeLeft;
     public player player;
 	public Text timeText;
+    
     bool timechange; // to check when we have to keep run the timer
     Animator m_Animator;
 
     // Start is called before the first frame update
     void Start()
     {
-       uiText.text = "Goal: Fix Life Support Systems";
+       uiText.text = "Complete the Objective";
 	   timeText.text = "Time Left: ";
        timeLeft = 100.0f;
        timechange = true;
@@ -36,6 +37,9 @@ public class GameController : MonoBehaviour
             }
         }
     }
+
+    
+    
     // win situation
     public void winSituation()
     {

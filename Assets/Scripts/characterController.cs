@@ -16,6 +16,7 @@ public class characterController : MonoBehaviour
     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
     Collision2D collision; 
     public bool obj_Complete = false; //setting objective to not complete
+    public bool clue_collect = false; //check if clue is found
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
@@ -48,7 +49,7 @@ public class characterController : MonoBehaviour
             if (other.gameObject.CompareTag ("Datalog"))
             {
                 other.gameObject.SetActive(false);
-                //should read or show clue here
+                clue_collect = true;
             }
             else if (other.gameObject.CompareTag("objective"))
             {
