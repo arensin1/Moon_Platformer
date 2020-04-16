@@ -61,6 +61,8 @@ public class DialogueManager : MonoBehaviour {
 	void EndDialogue()
 	{
 		animator.SetBool("1stDialog", false);
+		animator.SetBool("Datalog", false);
+		animator.SetBool("End", false);
 	}
 
 }

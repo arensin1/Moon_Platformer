@@ -21,7 +21,7 @@ public class characterController : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
     public bool endOfGame = false;
-
+    public Animator animator;
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
@@ -50,11 +50,13 @@ public class characterController : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                 clue_collect = true;
+                animator.SetBool("Datalog", true);
             }
             else if (other.gameObject.CompareTag("objective"))
             {
                 other.gameObject.SetActive(false);
                 obj_Complete = true;
+                animator.SetBool("End", true);
             }
         }
     public void Move(float move, bool jump)
