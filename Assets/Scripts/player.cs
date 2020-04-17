@@ -24,9 +24,9 @@ public class player : MonoBehaviour
         hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
         animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values
         if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            animator.SetBool("isJumping", true);
+        { jump = true;
+   
+           animator.SetBool("isJumping", true);
         }
     }
 

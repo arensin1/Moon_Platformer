@@ -10,7 +10,7 @@ public class characterController : MonoBehaviour
                        // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck;
-
+    
     private float m_JumpForce = 400f; //jump force
     private bool m_Grounded = false;  //boolean if character is grounded
     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
@@ -59,6 +59,7 @@ public class characterController : MonoBehaviour
                 animator.SetBool("End", true);
             }
         }
+    
     public void Move(float move, bool jump)
     {
         if (!endOfGame)
