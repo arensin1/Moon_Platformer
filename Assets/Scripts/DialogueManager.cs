@@ -8,7 +8,8 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 	public Text nameText;
 	public Text dialogueText;
-
+	public Button button;
+	public Button triggerButton;
 	//public Animator animator;
 
 	private Queue<string> sentences;
@@ -21,7 +22,8 @@ public class DialogueManager : MonoBehaviour {
 	public void StartDialogue (Dialogue dialogue)
 	{
 		//animator.SetBool("IsOpen", true);
-
+		button.gameObject.SetActive(true);
+		triggerButton.interactable= false;
 		nameText.text = dialogue.name;
 		animator.SetBool("1stDialog", true);
 		sentences.Clear();
@@ -60,7 +62,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void EndDialogue()
 	{
-		Debug.Log("End of Convo");
+		button.gameObject.SetActive(false);
 		animator.SetBool("1stDialog", false);
 		animator.SetBool("Datalog", false);
 		animator.SetBool("End", false);

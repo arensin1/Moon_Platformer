@@ -5410,7 +5410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &828024329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6133,6 +6133,8 @@ MonoBehaviour:
   animator: {fileID: 875242288}
   nameText: {fileID: 1005083211}
   dialogueText: {fileID: 741793715}
+  button: {fileID: 828024330}
+  triggerButton: {fileID: 1060172936}
 --- !u!4 &1562722507
 Transform:
   m_ObjectHideFlags: 0
