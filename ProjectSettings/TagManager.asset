@@ -9,6 +9,8 @@ TagManager:
   - ConnectionTower
   - objective
   - ContinueButton
+  - DatalogImage
+  - WatsonImage
   layers:
   - Default
   - TransparentFX

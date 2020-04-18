@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Button button;
 	public Button triggerButton;
+	public GameObject Datalog;
 	//public Animator animator;
 
 	private Queue<string> sentences;
@@ -21,6 +22,12 @@ public class DialogueManager : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
+		if(animator.GetBool("Datalog")){
+			triggerButton.gameObject.SetActive(false);
+			Datalog.gameObject.SetActive(true);
+		}else{
+			triggerButton.gameObject.SetActive(true);
+		}
 		animator.SetBool("EndofConvo", false);
 		button.gameObject.SetActive(true);
 		triggerButton.interactable= false;
@@ -61,6 +68,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void EndDialogue()
 	{
+		Datalog.gameObject.SetActive(false);
 		animator.SetBool("EndofConvo", true);
 	}
 
