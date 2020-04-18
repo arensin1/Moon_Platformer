@@ -25,8 +25,10 @@ public class DialogueManager : MonoBehaviour {
 	{
 		Sam.isDialogueOn = true;
 		if(animator.GetBool("Datalog")){
-			triggerButton.gameObject.SetActive(false);
-			Datalog.gameObject.SetActive(true);
+			if(animator.GetBool("Objective")==false){
+				Datalog.gameObject.SetActive(true);
+				triggerButton.gameObject.SetActive(false);
+			}
 		}else{
 			triggerButton.gameObject.SetActive(true);
 		}
@@ -72,6 +74,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		Datalog.gameObject.SetActive(false);
 		animator.SetBool("EndofConvo", true);
+		animator.SetBool("Objective", false);
 		Sam.isDialogueOn = false;
 	}
 

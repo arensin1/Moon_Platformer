@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     public characterController characterController;
     public player player;
     public Animator animator;
-    public GameObject Sam;
     
 
     // Start is called before the first frame update
@@ -18,9 +17,7 @@ public class GameController : MonoBehaviour
     // win situation
     public void winSituation()
     {
-        if(characterController.obj_Complete){
-            stoppingTheGame();
-        }
+       // Debug.Log("thisLevelDone");
 
     }
 
@@ -30,13 +27,18 @@ public class GameController : MonoBehaviour
     {
         if(characterController.ourRigidbody.position.y < -5){
             stoppingTheGame();
+            characterController.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
         }
     }
 
     public void stoppingTheGame()
     {
-        Sam.GetComponent<player>().enabled = false;
+        player.enabled = false;
         animator.enabled = false;
-        characterController.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
+    }
+
+    public void startingTheGame(){
+        player.enabled = true;
+        animator.enabled = true;
     }
 }

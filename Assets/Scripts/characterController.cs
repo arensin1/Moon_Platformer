@@ -23,7 +23,8 @@ public class characterController : MonoBehaviour
     public UnityEvent OnLandEvent;
     public Animator animator_UI;
     public GameObject stopWatch;
-    public float waitTime = 3f;
+    public player Sam;
+    private float waitTime = 5f;
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
@@ -53,24 +54,16 @@ public class characterController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 clue_collect = true;
                 animator_UI.SetBool("Datalog", true);
-
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if (other.gameObject.CompareTag("objective"))
             {
                 obj_Complete = true;
                 animator_UI.SetBool("Objective", true);
-                stopWatch.SetActive(true);
-                StartCoroutine(LateCall());
+                other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
         }
     
-    IEnumerator LateCall()
-     {
-        yield return new WaitForSeconds(waitTime);
-        stopWatch.SetActive(false);
-        animator_UI.SetBool("final", true);
-     }
     public void Move(float move, bool jump)
     {
             //check the win and lose situation
