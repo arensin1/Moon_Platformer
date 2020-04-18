@@ -22,26 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -567
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_AnchoredPosition.y
-    path: bg
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -515
+        value: -656
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -60,7 +41,26 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -742
+        value: -705
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_AnchoredPosition.y
+    path: bg
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -658
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -83,14 +83,14 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3318017825
+      path: 4180809938
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 4180809938
+      path: 3318017825
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
@@ -130,26 +130,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -567
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_AnchoredPosition.y
-    path: bg
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -515
+        value: -656
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -168,7 +149,26 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -742
+        value: -705
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_AnchoredPosition.y
+    path: bg
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -658
         inSlope: 0
         outSlope: 0
         tangentMode: 136
