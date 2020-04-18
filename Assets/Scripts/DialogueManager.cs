@@ -21,11 +21,10 @@ public class DialogueManager : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		//animator.SetBool("IsOpen", true);
+		animator.SetBool("EndofConvo", false);
 		button.gameObject.SetActive(true);
 		triggerButton.interactable= false;
 		nameText.text = dialogue.name;
-		animator.SetBool("1stDialog", true);
 		sentences.Clear();
 
 		foreach (string sentence in dialogue.sentences)
@@ -62,10 +61,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void EndDialogue()
 	{
-		button.gameObject.SetActive(false);
-		animator.SetBool("1stDialog", false);
-		animator.SetBool("Datalog", false);
-		animator.SetBool("End", false);
+		animator.SetBool("EndofConvo", true);
 	}
 
 }

@@ -51,12 +51,13 @@ public class characterController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 clue_collect = true;
                 animator.SetBool("Datalog", true);
+                other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if (other.gameObject.CompareTag("objective"))
             {
                 other.gameObject.SetActive(false);
                 obj_Complete = true;
-                animator.SetBool("End", true);
+                animator.SetBool("Objective", true);
             }
         }
     
