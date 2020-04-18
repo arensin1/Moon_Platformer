@@ -308,5 +308,6 @@
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/DialogueTrigger.cs"
 "Assets/Scripts/GameController.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Pause.cs"
 "Assets/Scripts/player.cs"

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-
+using System.Collections;
+using System.Collections.Generic;
 
 public class characterController : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class characterController : MonoBehaviour
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
-    public Animator animator;
+    public Animator animator_UI;
+    public GameObject stopWatch;
+    public float waitTime = 3f;
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
@@ -49,18 +52,25 @@ public class characterController : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                 clue_collect = true;
-                animator.SetBool("Datalog", true);
+                animator_UI.SetBool("Datalog", true);
 
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if (other.gameObject.CompareTag("objective"))
             {
-                other.gameObject.SetActive(false);
                 obj_Complete = true;
-                animator.SetBool("Objective", true);
+                animator_UI.SetBool("Objective", true);
+                stopWatch.SetActive(true);
+                StartCoroutine(LateCall());
             }
         }
     
+    IEnumerator LateCall()
+     {
+        yield return new WaitForSeconds(waitTime);
+        stopWatch.SetActive(false);
+        animator_UI.SetBool("final", true);
+     }
     public void Move(float move, bool jump)
     {
             //check the win and lose situation
