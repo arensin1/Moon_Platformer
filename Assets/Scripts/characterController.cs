@@ -20,7 +20,6 @@ public class characterController : MonoBehaviour
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
-    public bool endOfGame = false;
     public Animator animator;
     private void Awake()
     {
@@ -51,6 +50,7 @@ public class characterController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 clue_collect = true;
                 animator.SetBool("Datalog", true);
+
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if (other.gameObject.CompareTag("objective"))
@@ -63,8 +63,6 @@ public class characterController : MonoBehaviour
     
     public void Move(float move, bool jump)
     {
-        if (!endOfGame)
-        {
             //check the win and lose situation
             gameController.winSituation();
             gameController.loseSituation();
@@ -96,13 +94,10 @@ public class characterController : MonoBehaviour
 
                 ourRigidbody.AddForce(new Vector2(0f, m_JumpForce));
             }
-        }
     }
 
     private void Flip()
     {
-        if(!endOfGame)
-        {
             // Switch the way the player is labelled as facing.
             m_FacingRight = !m_FacingRight;
 
@@ -110,6 +105,5 @@ public class characterController : MonoBehaviour
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
-        }
     }
 }

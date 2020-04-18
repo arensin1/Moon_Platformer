@@ -9,6 +9,7 @@ public class player : MonoBehaviour
     float hori = 0f;
     bool jump = false;
     public Animator animator;
+    public bool isDialogueOn;
  
 
     // Start is called before the first frame update
@@ -21,12 +22,17 @@ public class player : MonoBehaviour
     void Update()
     {
         //getting user input for jump and horizontal movement
-        hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values
-        if (Input.GetButtonDown("Jump"))
-        { jump = true;
-   
-           animator.SetBool("isJumping", true);
+        if(!isDialogueOn){
+            animator.enabled = true;
+            hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
+            animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values
+            if (Input.GetButtonDown("Jump"))
+            { 
+                jump = true;
+                animator.SetBool("isJumping", true);
+            }
+        }else{
+            animator.enabled=false;
         }
     }
 
@@ -38,8 +44,13 @@ public class player : MonoBehaviour
     void FixedUpdate()
     {
         //using function to move player
-        controller.Move(hori * Time.fixedDeltaTime, jump);
-        jump = false;
+        if (!isDialogueOn){
+            controller.Move(hori * Time.fixedDeltaTime, jump);
+            jump = false;
+        }else{
+            animator.enabled = false;
+        }
+        
     }
 
 }
