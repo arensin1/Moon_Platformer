@@ -22,7 +22,6 @@ public class characterController : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
     public Animator animator_UI;
-    public GameObject stopWatch;
     public player Sam;
     private float waitTime = 5f;
     private void Awake()
@@ -58,7 +57,6 @@ public class characterController : MonoBehaviour
             }
             else if (other.gameObject.CompareTag("objective"))
             {
-                
                 animator_UI.SetBool("Objective", true);
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
                 

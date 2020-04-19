@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour {
 			if(animator.GetBool("Objective")==false){
 				Datalog.gameObject.SetActive(true);
 				triggerButton.gameObject.SetActive(false);
+			}else{
+				triggerButton.gameObject.SetActive(true);
 			}
 		}else{
 			triggerButton.gameObject.SetActive(true);
@@ -55,7 +57,6 @@ public class DialogueManager : MonoBehaviour {
 			EndDialogue();
 			return;
 		}
-
 		string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
 		StopAllCoroutines();

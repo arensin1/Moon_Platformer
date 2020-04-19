@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 84063727}
   pause_menu: {fileID: 1489451121}
-  animator: {fileID: 875242288}
+  Sam: {fileID: 412189701}
 --- !u!1 &148662320
 GameObject:
   m_ObjectHideFlags: 0
@@ -6022,6 +6022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86aa86881fdc4b4e8adbe0af43bb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  Sam: {fileID: 0}
 --- !u!4 &695688108
 Transform:
   m_ObjectHideFlags: 0
@@ -7492,6 +7494,7 @@ MonoBehaviour:
   dialogueText: {fileID: 741793715}
   button: {fileID: 828024330}
   triggerButton: {fileID: 1060172936}
+  needTrigger: 0
   Datalog: {fileID: 148662320}
   Sam: {fileID: 412189701}
 --- !u!4 &1562722507
