@@ -7,11 +7,9 @@ public class Pause : MonoBehaviour
 {
     
     public GameObject pauseMenuUI;
+    public bool isOn;
     // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+ 
     // Update is called once per frame
     void Update()
     {
@@ -19,10 +17,12 @@ public class Pause : MonoBehaviour
         {
             if (Time.timeScale ==0){
                 Resume();
+                isOn = false;
             }
             else {
                 Time.timeScale = 0;
                 pauseMenuUI.SetActive(true);
+                isOn = true;
                 
             }
         }
@@ -31,12 +31,13 @@ public class Pause : MonoBehaviour
     public void Resume()
     {
         Time.timeScale =1;
+        pauseMenuUI.SetActive(false);
     }
-    public void Quit()
+    public void Menu()
     {
-        UnityEditor.EditorApplication.isPlaying = false; //for editing purpose
-        Application.Quit();
+         SceneManager.LoadScene(0);
     }
+    
     public void StartOver()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
