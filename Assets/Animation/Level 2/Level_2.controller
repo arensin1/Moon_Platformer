@@ -38,6 +38,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Datalog
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: EndofConvo
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2484011076184557410}
   m_Solo: 0
@@ -191,10 +194,10 @@ AnimatorStateMachine:
     m_Position: {x: 20, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6129855742301805067}
-    m_Position: {x: 190, y: -280, z: 0}
+    m_Position: {x: 190, y: -130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2484011076184557410}
-    m_Position: {x: 420, y: -180, z: 0}
+    m_Position: {x: 330, y: -260, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

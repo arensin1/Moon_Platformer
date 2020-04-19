@@ -11,7 +11,7 @@ public class characterController : MonoBehaviour
                        // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck;
-    
+    public bool obj_complete = false;
     private float m_JumpForce = 400f; //jump force
     private bool m_Grounded = false;  //boolean if character is grounded
     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
@@ -56,7 +56,8 @@ public class characterController : MonoBehaviour
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if (other.gameObject.CompareTag("objective"))
-            {
+            {   
+                obj_complete = true;
                 animator_UI.SetBool("Objective", true);
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
                 

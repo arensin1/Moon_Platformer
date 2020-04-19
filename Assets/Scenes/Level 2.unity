@@ -466,8 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330227f572c214eeda4c0946ae372108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 412189697}
-  trigger: {fileID: 0}
+  Sam: {fileID: 412189697}
   player: {fileID: 412189701}
   animator: {fileID: 412189702}
   loader: {fileID: 422077902}
@@ -811,6 +810,7 @@ MonoBehaviour:
   m_MovementSmoothing: 0.05
   m_GroundCheck: {fileID: 629406976}
   m_CeilingCheck: {fileID: 937606359}
+  obj_complete: 0
   clue_collect: 0
   gameController: {fileID: 284572222}
   OnLandEvent:
@@ -916,7 +916,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b22c8b513a1db4e6bbfdce39d8222207, type: 2}
   m_CullingMode: 0
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86aa86881fdc4b4e8adbe0af43bb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 233764206}
   Sam: {fileID: 0}
 --- !u!4 &422077903
 Transform:
@@ -1151,7 +1151,6 @@ MonoBehaviour:
     name: 
     sentences: []
   animator: {fileID: 233764206}
-  obj_complete: 0
 --- !u!1 &455954577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10071,7 +10070,6 @@ MonoBehaviour:
     name: 
     sentences: []
   animator: {fileID: 233764206}
-  obj_complete: 0
 --- !u!1 &937606358
 GameObject:
   m_ObjectHideFlags: 0
@@ -10299,7 +10297,6 @@ MonoBehaviour:
     name: 
     sentences: []
   animator: {fileID: 233764206}
-  obj_complete: 0
 --- !u!114 &1094909598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10591,17 +10588,19 @@ MonoBehaviour:
   dialogue:
     name: Datalog#2
     sentences:
-    - "Hello, if you\u2019re reading this, I\u2019ve been an employee of Lunar Industries
-      for 8 years."
-    - "Over the past two years, I\u2019ve been assigned to maintain facilities and
-      mine materials on the moon."
-    - I am leaving behind these data logs for anyone to listen to about my experiences
-      up here.
+    - The AI system has been really helpful up here.
+    - "He\u2019s pretty friendly but sometimes seems to know things about me that
+      I\u2019ve never shared."
+    - 'Lunar must have given him background information, '
+    - "but sometimes it\u2019s pretty freaky how well he knows exactly what I\u2019m
+      going to do."
+    - "Anyway, I\u2019m making great progress on the diorama of an old victorian city."
+    - Someone before me had started it, and I might be able to finish it up before
+      I leave
   noDatalog:
     name: 
     sentences: []
-  animator: {fileID: 0}
-  obj_complete: 0
+  animator: {fileID: 233764206}
 --- !u!61 &1199604633
 BoxCollider2D:
   m_ObjectHideFlags: 0

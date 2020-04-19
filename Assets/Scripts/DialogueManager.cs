@@ -13,7 +13,6 @@ public class DialogueManager : MonoBehaviour {
 	public GameObject Datalog;
 	public player Sam;
 	
-	
 
 	private Queue<string> sentences;
 

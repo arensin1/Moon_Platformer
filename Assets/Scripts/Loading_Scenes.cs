@@ -10,7 +10,7 @@ public class Loading_Scenes : MonoBehaviour
     //use when endofConvo is true & Dialoguename = Dialogue 
     
     public Animator animator;
-    public player Sam;
+    public characterController Sam;
     public void Load_Next_Scene()
     {
         if((SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 9))
@@ -19,9 +19,8 @@ public class Loading_Scenes : MonoBehaviour
             animator.SetBool("Objective", false);
             animator.SetBool("Datalog", false);
             animator.SetBool("EndofConvo", false);
-            if (SceneManager.GetActiveScene().buildIndex >1){
-                Sam.isDialogueOn = false;
-            }
+            Sam.obj_complete = false;
+            Sam.clue_collect = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
         }else
          {
