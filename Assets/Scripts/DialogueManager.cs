@@ -12,15 +12,17 @@ public class DialogueManager : MonoBehaviour {
 	public Button triggerButton;
 	public GameObject Datalog;
 	public player Sam;
-	//public Animator animator;
+	
+	
 
 	private Queue<string> sentences;
 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+		
 	}
-
+	
 	public void StartDialogue (Dialogue dialogue)
 	{
 		Sam.isDialogueOn = true;

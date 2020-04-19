@@ -8,6 +8,7 @@ public class Camera_overview : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public Vector3 position;
     public Animator animator;
+    public DialogueManager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class Camera_overview : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if(!animator.GetBool("1stDialog"))
+        if(animator.GetBool("EndofConvo") && !manager.Datalog.gameObject.active)
         {
             transform.position = Vector3.SmoothDamp(this.transform.position,position ,
         ref velocity, smoothing);

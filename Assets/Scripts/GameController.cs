@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public characterController characterController;
+    public DialogueTrigger trigger;
     public player player;
     public Animator animator;
+    public Loading_Scenes loader;
     
 
     // Start is called before the first frame update
@@ -17,7 +19,9 @@ public class GameController : MonoBehaviour
     // win situation
     public void winSituation()
     {
-       // Debug.Log("thisLevelDone");
+       if(characterController.clue_collect && trigger.obj_complete){
+           loader.Load_Next_Scene();
+       }
 
     }
 
@@ -25,7 +29,7 @@ public class GameController : MonoBehaviour
     //lost situation 2 (on top of this code) : time's up
     public void loseSituation()
     {
-        if(characterController.ourRigidbody.position.y < -5){
+        if(characterController.ourRigidbody.position.y < -20){
             stoppingTheGame();
             characterController.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
         }

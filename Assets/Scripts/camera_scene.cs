@@ -24,7 +24,7 @@ public class camera_scene : MonoBehaviour
        
         
         float x_position = overview.transform.position.x;
-        if((target.x - x_position) < 1)
+        if((target.x - x_position) < 2)
         {
            
             overview.gameObject.SetActive(false);
