@@ -144,6 +144,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: EndofConvo
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: Notyet
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6129855742301805067}
   m_Solo: 0
@@ -196,6 +199,12 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Notyet
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
@@ -284,7 +293,7 @@ AnimatorStateMachine:
     m_Position: {x: 350, y: -20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8507170463883216204}
-    m_Position: {x: 240, y: -180, z: 0}
+    m_Position: {x: 210, y: -210, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

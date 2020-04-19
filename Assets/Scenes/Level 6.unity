@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 167452549}
   - component: {fileID: 167452551}
   - component: {fileID: 167452550}
+  - component: {fileID: 167452552}
   m_Layer: 0
   m_Name: New Sprite (2)
   m_TagString: objective
@@ -275,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167452548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 178, y: 10.5, z: 0}
+  m_LocalPosition: {x: 175.5, y: 10.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1126333883}
@@ -294,7 +295,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0077819824, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -305,7 +306,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.5178528, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &167452551
 SpriteRenderer:
@@ -342,8 +343,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 148184803
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d886ba9ea1c0747f48bd6188b513f837, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -356,6 +357,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &167452552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167452548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Watson
+    sentences:
+    - '[System]: Test is over.'
+    - 'Thanks again, Sam. '
+  noDatalog:
+    name: System
+    sentences:
+    - '[System]: Test is running...'
+  animator: {fileID: 878534380}
 --- !u!1 &247181765
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,9 +499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330227f572c214eeda4c0946ae372108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sam: {fileID: 0}
+  Sam: {fileID: 412189697}
   player: {fileID: 412189701}
-  animator: {fileID: 0}
+  animator: {fileID: 878534380}
   loader: {fileID: 777631287}
 --- !u!1 &308044139
 GameObject:
@@ -626,7 +649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.93, y: 4.79, z: 0}
+  m_LocalPosition: {x: 138, y: 42.4, z: 0}
   m_LocalScale: {x: 1.2037091, y: 1.2596171, z: 0.24605738}
   m_Children:
   - {fileID: 937606359}
@@ -667,7 +690,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  animator_UI: {fileID: 0}
+  animator_UI: {fileID: 878534380}
   Sam: {fileID: 412189701}
 --- !u!50 &412189698
 Rigidbody2D:
@@ -6596,6 +6619,7 @@ GameObject:
   - component: {fileID: 695544758}
   - component: {fileID: 695544760}
   - component: {fileID: 695544759}
+  - component: {fileID: 695544761}
   m_Layer: 0
   m_Name: New Sprite (1)
   m_TagString: Untagged
@@ -6611,7 +6635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695544757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 181.5, y: 10.5, z: 0}
+  m_LocalPosition: {x: 177.5, y: 10.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1126333883}
@@ -6624,13 +6648,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695544757}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.015548706, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6641,7 +6665,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 2.0265198, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &695544760
 SpriteRenderer:
@@ -6678,8 +6702,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 148184803
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 86504eb5fad8043ec87c8b72b000ca2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6692,6 +6716,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &695544761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695544757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Watson
+    sentences:
+    - '[System]: Test is over.'
+    - 'Thanks again, Sam. '
+  noDatalog:
+    name: System
+    sentences:
+    - '[System]: Test is running...'
+  animator: {fileID: 878534380}
 --- !u!1 &707830911
 GameObject:
   m_ObjectHideFlags: 0
@@ -6703,6 +6749,7 @@ GameObject:
   - component: {fileID: 707830912}
   - component: {fileID: 707830914}
   - component: {fileID: 707830913}
+  - component: {fileID: 707830915}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -6731,13 +6778,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707830911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.05443573, y: -0.014168739}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6748,7 +6795,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.54896545, y: 2.9569416}
   m_EdgeRadius: 0
 --- !u!212 &707830914
 SpriteRenderer:
@@ -6785,8 +6832,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 148184803
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7c2c0a20447e14bd0a4767191ddc7d72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6799,6 +6846,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &707830915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707830911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Watson
+    sentences:
+    - '[System]: Test is over.'
+    - 'Thanks again, Sam. '
+  noDatalog:
+    name: System
+    sentences:
+    - '[System]: Test is running...'
+  animator: {fileID: 878534380}
 --- !u!1 &777631286
 GameObject:
   m_ObjectHideFlags: 0
@@ -6828,8 +6897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86aa86881fdc4b4e8adbe0af43bb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  Sam: {fileID: 0}
+  animator: {fileID: 878534380}
+  Sam: {fileID: 412189697}
 --- !u!4 &777631288
 Transform:
   m_ObjectHideFlags: 0
@@ -7392,6 +7461,7 @@ RectTransform:
   - {fileID: 1261988788}
   - {fileID: 903183176}
   - {fileID: 1760958482}
+  - {fileID: 1806015081}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7504,9 +7574,9 @@ MonoBehaviour:
   dialogueText: {fileID: 1993315809}
   button: {fileID: 1801173420}
   triggerButton: {fileID: 832969450}
-  ChangedFace: {fileID: 1476153166}
+  ChangedFace: {fileID: 832969449}
   Datalog: {fileID: 1476153166}
-  Sam: {fileID: 0}
+  Sam: {fileID: 412189701}
 --- !u!4 &921071460
 Transform:
   m_ObjectHideFlags: 0
@@ -7916,8 +7986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothing: 8
   position: {x: 202.8, y: 17, z: -10}
-  animator: {fileID: 0}
-  manager: {fileID: 0}
+  animator: {fileID: 878534380}
+  manager: {fileID: 921071459}
 --- !u!81 &1024526011
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8353,10 +8423,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.04183197}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8367,7 +8437,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 1, y: 1.041832}
   m_EdgeRadius: 0
 --- !u!212 &1277517942
 SpriteRenderer:
@@ -8404,10 +8474,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 148184803
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d2817d9c845404807909025306f441a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d914991d685c24f15b61ec2934398d40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8431,12 +8501,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
-    sentences: []
+    name: ???
+    sentences:
+    - 'If you are reading this I advise you to leave as early as possible. '
+    - 'You are in danger! '
+    - 'The company we work for is just using you and will come to exterminate you. '
+    - "There\u2019s a trash compartment that they come to collect. "
+    - Try to find it and stow away in there.
   noDatalog:
     name: 
     sentences: []
-  animator: {fileID: 0}
+  animator: {fileID: 878534380}
 --- !u!1 &1322331069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8624,7 +8699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd881121169f24cd8aa9e4725449d699, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d914991d685c24f15b61ec2934398d40, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8803,7 +8878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 1622267432}
   pause_menu: {fileID: 1669291044}
-  animator: {fileID: 0}
+  animator: {fileID: 878534380}
 --- !u!1 &1669291043
 GameObject:
   m_ObjectHideFlags: 0
@@ -9117,6 +9192,76 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805374626}
+  m_CullTransparentMesh: 0
+--- !u!1 &1806015080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806015081}
+  - component: {fileID: 1806015083}
+  - component: {fileID: 1806015082}
+  m_Layer: 5
+  m_Name: Note5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1806015081
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806015080}
+  m_LocalRotation: {x: -0, y: -0, z: 0.005962724, w: -0.99998224}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 878534384}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.683}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 289, y: -24}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1806015082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806015080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 3f99f3f39e7cc4565b91297fab377411, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1806015083
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806015080}
   m_CullTransparentMesh: 0
 --- !u!1 &1806976951
 GameObject:
