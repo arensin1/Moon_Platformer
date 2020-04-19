@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Button button;
 	public Button triggerButton;
+	public GameObject ChangedFace;
 	public GameObject Datalog;
 	public player Sam;
 	
@@ -25,16 +26,20 @@ public class DialogueManager : MonoBehaviour {
 	public void StartDialogue (Dialogue dialogue)
 	{
 		Sam.isDialogueOn = true;
-		if(animator.GetBool("Datalog")){
-			if(animator.GetBool("Objective")==false){
-				Datalog.gameObject.SetActive(true);
-				triggerButton.gameObject.SetActive(false);
-			}else{
-				triggerButton.gameObject.SetActive(true);
-			}
+		if(animator.GetBool("ChangeFace")){
+			triggerButton.gameObject.SetActive(false);
+			ChangedFace.gameObject.SetActive(true);
 		}else{
-			triggerButton.gameObject.SetActive(true);
+			if(animator.GetBool("Datalog")){
+				if(animator.GetBool("Objective")==false){
+					Datalog.gameObject.SetActive(true);
+					triggerButton.gameObject.SetActive(false);
+				}else{
+					triggerButton.gameObject.SetActive(true);
+				}
+			}
 		}
+		
 		animator.SetBool("EndofConvo", false);
 		button.gameObject.SetActive(true);
 		triggerButton.interactable= false;

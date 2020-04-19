@@ -56,7 +56,10 @@ public class characterController : MonoBehaviour
             }
             else if (other.gameObject.CompareTag("objective"))
             {   
-                obj_complete = true;
+                if(clue_collect){
+                    animator_UI.SetBool("ChangeFace", true);
+                    obj_complete = true;
+                }
                 animator_UI.SetBool("Objective", true);
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
                 

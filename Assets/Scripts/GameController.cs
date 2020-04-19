@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     // win situation
     public void winSituation()
     {
-       if(Sam.clue_collect && Sam.obj_complete){
+       if(Sam.obj_complete){
            loader.Load_Next_Scene();
        }
 
