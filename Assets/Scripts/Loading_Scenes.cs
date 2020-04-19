@@ -15,7 +15,6 @@ public class Loading_Scenes : MonoBehaviour
     {
         if((SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 9))
         {
-            animator.SetBool("Start", false);
             animator.SetBool("Objective", false);
             animator.SetBool("Datalog", false);
             animator.SetBool("EndofConvo", false);

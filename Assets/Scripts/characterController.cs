@@ -23,7 +23,6 @@ public class characterController : MonoBehaviour
     public UnityEvent OnLandEvent;
     public Animator animator_UI;
     public player Sam;
-    private float waitTime = 5f;
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
