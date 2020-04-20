@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\camera_scene.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\characterController.cs" />
+     <Compile Include="Assets\Scripts\creditsLink.cs" />
      <Compile Include="Assets\Scripts\DataHolder.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />

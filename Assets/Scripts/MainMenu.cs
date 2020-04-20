@@ -11,6 +11,13 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
     }
 
+    public void credits(){
+        SceneManager.LoadScene(10);
+    }
+
+    public void goBackMenu(){
+        SceneManager.LoadScene(0);
+    }
     public void QuitGame ()
     {
         UnityEditor.EditorApplication.isPlaying = false; //for editing purpose
