@@ -50,6 +50,7 @@ public class Pause : MonoBehaviour
         Sam.clue_collect = false;
         isOn = false;
         */
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

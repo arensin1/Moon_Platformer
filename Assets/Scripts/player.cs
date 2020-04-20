@@ -20,12 +20,12 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene ().buildIndex >7 ){
+        if(SceneManager.GetActiveScene ().buildIndex >=5){
             controller.clue_collect = true;
         }
         if(Input.GetKeyDown("e") && controller.trigger)
              {
-                Debug.Log("pressed e");
+                
                 if(controller.clue_collect){
                     ani_Dialog.SetBool("Notyet",false);
                     ani_Dialog.SetBool("ChangeFace", true);
@@ -38,7 +38,7 @@ public class player : MonoBehaviour
               }
         //getting user input for jump and horizontal movement
         if(!isDialogueOn){
-            Live_text.text = "Lives:" + " " + DataHolder.Lives; 
+            Live_text.text = "Lives:" + " " + DataHolder.Lives +"\n" + "Press 'esc' to pause"; 
             animator.enabled = true;
             hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
             animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values

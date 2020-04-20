@@ -10,24 +10,27 @@ public class music_on_off : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("Start");
+      
          if(DataHolder.MusicOn)
         {
             music.Play();
             DataHolder.MusicOn = true;
-            Debug.Log("Music_On");
+            
         }
         else
         {
             music.Pause();
             DataHolder.MusicOn = false;
-            Debug.Log("Music_Off");
+            
         }
     }
 
     void Update(){
         
-        if(pause_menu.isOn || !animator.GetBool("EndofConvo"))
+        if(animator.GetBool("EndofConvo") && !animator.GetBool("Notyet")){
+            music.volume = Mathf.Lerp(music.volume, 0f,5f);
+        }
+        else if(pause_menu.isOn || !animator.GetBool("EndofConvo"))
         {
             music.volume = 0.15f;
         }
@@ -35,6 +38,7 @@ public class music_on_off : MonoBehaviour
         {
             music.volume = 0.5f;
         }
+        
     }
 
 
