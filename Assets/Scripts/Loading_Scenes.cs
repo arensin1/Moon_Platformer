@@ -28,8 +28,10 @@ public class Loading_Scenes : MonoBehaviour
         
         
     }
+
    /* void Restart_Level()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
-    }*/
+    }
+    */
 }

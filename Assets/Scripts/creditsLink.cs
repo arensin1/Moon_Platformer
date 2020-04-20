@@ -9,7 +9,7 @@
       }
       public void OpenAlexURL()
       {
-          Application.OpenURL("https://www.linkedin.com/in/young-jie-cho/");
+          Application.OpenURL("https://www.linkedin.com/in/alexandria-rensing-29561b162/");
       }
       public void OpenMusicURL()
       {

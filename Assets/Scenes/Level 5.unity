@@ -168,13 +168,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20626512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -343, y: -196.46158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
   - {fileID: 112095095}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1715152143}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &21332424
@@ -233,7 +233,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
@@ -254,137 +254,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21332424}
   m_CullTransparentMesh: 0
---- !u!1 &53841957
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 53841958}
-  - component: {fileID: 53841961}
-  - component: {fileID: 53841960}
-  - component: {fileID: 53841959}
-  m_Layer: 0
-  m_Name: datalog (12)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &53841958
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53841957}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 188.5, y: -18, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &53841959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53841957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &53841960
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53841957}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &53841961
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53841957}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &99327432
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &99327433
 RectTransform:
   m_ObjectHideFlags: 0
@@ -525,14 +394,13 @@ GameObject:
   - component: {fileID: 111718157}
   - component: {fileID: 111718160}
   - component: {fileID: 111718159}
-  - component: {fileID: 111718158}
   m_Layer: 0
-  m_Name: datalog (5)
-  m_TagString: Datalog
+  m_Name: cloneSam5
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &111718157
 Transform:
   m_ObjectHideFlags: 0
@@ -540,36 +408,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111718156}
-  m_LocalRotation: {x: -0, y: -0, z: 0.12681314, w: 0.9919266}
-  m_LocalPosition: {x: 179.5, y: -16.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.806287, w: -0.5915246}
+  m_LocalPosition: {x: 184.5, y: -16.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.571001}
---- !u!114 &111718158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111718156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -107.469}
 --- !u!61 &111718159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -747,14 +592,13 @@ GameObject:
   - component: {fileID: 135946657}
   - component: {fileID: 135946660}
   - component: {fileID: 135946659}
-  - component: {fileID: 135946658}
   m_Layer: 0
-  m_Name: datalog (3)
-  m_TagString: Datalog
+  m_Name: cloneSam3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &135946657
 Transform:
   m_ObjectHideFlags: 0
@@ -763,35 +607,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135946656}
   m_LocalRotation: {x: -0, y: -0, z: 0.06827387, w: 0.99766666}
-  m_LocalPosition: {x: 180, y: -14.5, z: 0}
+  m_LocalPosition: {x: 196, y: -17.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.8300004}
---- !u!114 &135946658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135946656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
 --- !u!61 &135946659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -878,7 +699,7 @@ GameObject:
   - component: {fileID: 146016448}
   - component: {fileID: 146016449}
   m_Layer: 0
-  m_Name: space center 1 (5)
+  m_Name: spaceCenter7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,7 +717,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &146016449
 SpriteRenderer:
@@ -1068,11 +889,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175553242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 185.60092, y: 40.492237, z: -2689.2148}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -157.39908, y: -155.96935, z: -2689.2148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1715152143}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &175553245
@@ -1219,137 +1040,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214000358}
   m_CullTransparentMesh: 0
---- !u!1 &257409281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 257409282}
-  - component: {fileID: 257409285}
-  - component: {fileID: 257409284}
-  - component: {fileID: 257409283}
-  m_Layer: 0
-  m_Name: datalog (11)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &257409282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257409281}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9507042, w: 0.3100993}
-  m_LocalPosition: {x: 185.5, y: -16.5, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -216.12999}
---- !u!114 &257409283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257409281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &257409284
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257409281}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &257409285
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257409281}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &279592799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,11 +1067,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279592799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 214.5, y: 10, z: 0}
+  m_LocalPosition: {x: 244, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &279592801
 BoxCollider2D:
@@ -1472,11 +1162,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Watson
-    sentences: []
+    sentences:
+    - '[Radar] The radar system is up and running.'
+    - "I\u2019m sorry you had to experience that, sir."
+    - I was programmed not to tell you about the other Sams.
   noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
+    name: Watson
+    sentences:
+    - '[Radar] The radar system is up and running.'
+  animator: {fileID: 479574161}
 --- !u!1 &284572220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,12 +1195,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284572220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1227484, y: 14.412741, z: -132.81218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -348.12274, y: -182.04884, z: -132.81218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1715152143}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &284572222
 MonoBehaviour:
@@ -1536,7 +1230,7 @@ GameObject:
   - component: {fileID: 292933116}
   - component: {fileID: 292933117}
   m_Layer: 0
-  m_Name: space center 1 (7)
+  m_Name: spaceCenter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1554,7 +1248,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &292933117
 SpriteRenderer:
@@ -1639,7 +1333,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1091384787}
   button: {fileID: 214000360}
   triggerButton: {fileID: 951388598}
-  ChangedFace: {fileID: 2091105848}
+  ChangedFace: {fileID: 2062256420}
   Datalog: {fileID: 2091105848}
   Sam: {fileID: 412189701}
 --- !u!4 &301893970
@@ -1649,12 +1343,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301893968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 286.0357, y: 31.990776, z: -16.077087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -66.430664, y: -187.76582, z: -18.748789}
+  m_LocalScale: {x: 1.1661807, y: 1.1661807, z: 1.1661807}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 479574165}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302893835
 GameObject:
@@ -1667,7 +1361,6 @@ GameObject:
   - component: {fileID: 302893839}
   - component: {fileID: 302893838}
   - component: {fileID: 302893837}
-  - component: {fileID: 302893836}
   m_Layer: 0
   m_Name: connectionTower
   m_TagString: objective
@@ -1675,28 +1368,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &302893836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302893835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Watson
-    sentences:
-    - 'Tower has been fixed. It was a simple connection issue. '
-  noDatalog:
-    name: Watson
-    sentences:
-    - Hey Sam, I think I need some time take a look at this issue.
-    - Why don't you take a walk while I compute the best solution?
-  animator: {fileID: 0}
 --- !u!61 &302893837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1707,7 +1378,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.4846598, y: 4.673132}
@@ -1780,11 +1451,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302893835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 242, y: 8.5, z: 0}
+  m_LocalPosition: {x: 212, y: 8.5, z: 0}
   m_LocalScale: {x: 1.36922, y: 1.36922, z: 1.36922}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308044139
 GameObject:
@@ -1845,12 +1516,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308044139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -343, y: -196.46158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1715152143}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355992342
 GameObject:
@@ -2009,13 +1680,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.8, y: 6.6, z: 0}
+  m_LocalPosition: {x: 221.2, y: 7.3, z: 0}
   m_LocalScale: {x: 1.2037091, y: 1.2596171, z: 0.24605738}
   m_Children:
   - {fileID: 937606359}
   - {fileID: 629406976}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &412189697
 MonoBehaviour:
@@ -2265,157 +1936,28 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 301893970}
   - {fileID: 745962615}
   - {fileID: 969617745}
   - {fileID: 1630327343}
   - {fileID: 951388599}
+  - {fileID: 2062256423}
   - {fileID: 2091105851}
-  - {fileID: 851768782}
-  - {fileID: 2066606193}
   - {fileID: 1430916982}
   - {fileID: 1744545258}
   - {fileID: 526967288}
   - {fileID: 1183401804}
+  - {fileID: 851768782}
+  - {fileID: 2066606193}
   - {fileID: 780819031}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &483784842
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 483784843}
-  - component: {fileID: 483784846}
-  - component: {fileID: 483784845}
-  - component: {fileID: 483784844}
-  m_Layer: 0
-  m_Name: datalog (10)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &483784843
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483784842}
-  m_LocalRotation: {x: -0, y: -0, z: 0.14487304, w: -0.9894503}
-  m_LocalPosition: {x: 183.5, y: -17.63, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -16.66}
---- !u!114 &483784844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483784842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &483784845
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483784842}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &483784846
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483784842}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &517623896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,14 +1969,13 @@ GameObject:
   - component: {fileID: 517623897}
   - component: {fileID: 517623900}
   - component: {fileID: 517623899}
-  - component: {fileID: 517623898}
   m_Layer: 0
-  m_Name: datalog (1)
-  m_TagString: Datalog
+  m_Name: cloneSam1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &517623897
 Transform:
   m_ObjectHideFlags: 0
@@ -2442,36 +1983,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517623896}
-  m_LocalRotation: {x: -0, y: -0, z: 0.2812798, w: 0.95962584}
-  m_LocalPosition: {x: 177, y: -15.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.008986423, w: -0.99995965}
+  m_LocalPosition: {x: 228, y: -17.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.673}
---- !u!114 &517623898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517623896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.0300001}
 --- !u!61 &517623899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2717,7 +2235,7 @@ GameObject:
   - component: {fileID: 533124691}
   - component: {fileID: 533124692}
   m_Layer: 0
-  m_Name: space center 1 (2)
+  m_Name: spaceCenter4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2735,7 +2253,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &533124692
 SpriteRenderer:
@@ -2924,7 +2442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &670971118
 TilemapRenderer:
@@ -3575,6 +3093,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 238, y: -17, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 239, y: -17, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 246, y: -17, z: 0}
     second:
       m_TileIndex: 31
@@ -3593,6 +3129,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 174, y: -16, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 175, y: -16, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 246, y: -16, z: 0}
     second:
       m_TileIndex: 31
@@ -3603,6 +3157,105 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 247, y: -16, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 174, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 175, y: -15, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 177, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 178, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 179, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 180, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 181, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 182, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 183, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 184, y: -15, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 185, y: -15, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -4079,6 +3732,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 233, y: -14, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 234, y: -14, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 231, y: -13, z: 0}
     second:
       m_TileIndex: 0
@@ -4142,6 +3813,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 237, y: -10, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 238, y: -10, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 240, y: -10, z: 0}
     second:
       m_TileIndex: 0
@@ -4197,6 +3886,24 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 231, y: -7, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 233, y: -7, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 234, y: -7, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -4287,6 +3994,24 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 231, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 237, y: -4, z: 0}
+    second:
+      m_TileIndex: 31
+      m_TileSpriteIndex: 31
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 238, y: -4, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -4808,6 +4533,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 232, y: -1, z: 0}
+    second:
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 233, y: -1, z: 0}
+    second:
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 60, y: 0, z: 0}
     second:
       m_TileIndex: 19
@@ -5208,6 +4951,42 @@ Tilemap:
     second:
       m_TileIndex: 21
       m_TileSpriteIndex: 21
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 236, y: 1, z: 0}
+    second:
+      m_TileIndex: 27
+      m_TileSpriteIndex: 27
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 237, y: 1, z: 0}
+    second:
+      m_TileIndex: 23
+      m_TileSpriteIndex: 23
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 238, y: 1, z: 0}
+    second:
+      m_TileIndex: 22
+      m_TileSpriteIndex: 22
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 239, y: 1, z: 0}
+    second:
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5879,10 +5658,19 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 236, y: 2, z: 0}
+    second:
+      m_TileIndex: 24
+      m_TileSpriteIndex: 24
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 237, y: 2, z: 0}
     second:
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 21
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5890,8 +5678,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 238, y: 2, z: 0}
     second:
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5899,8 +5687,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 239, y: 2, z: 0}
     second:
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -8617,7 +8405,7 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 74
+  - m_RefCount: 82
     m_Data: {fileID: 11400000, guid: d6eb053bdb2d94f4d90ee23f1cfc8fc8, type: 2}
   - m_RefCount: 41
     m_Data: {fileID: 11400000, guid: 42b8c0e126fd5429ba96a2f6c2d8e8ad, type: 2}
@@ -8629,15 +8417,15 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 485103275dd334ae5af596917cab9257, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: fa9fbc6e681964da9a6d655595e78fc2, type: 2}
-  - m_RefCount: 14
+  - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: bc59e014864e5427aada8df8dd460943, type: 2}
-  - m_RefCount: 14
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 849a99801a04b46f0a6786c891213681, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 35e569e6512cf4dbb8b5791c43c5ff0a, type: 2}
-  - m_RefCount: 6
+  - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: ad065ea06c7ad4d6b8d2daeaed1d6808, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 874a2f6af80f448f8a499cd07e2f69b8, type: 2}
   - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: c40917cd2221b45f8a10951e559e1c85, type: 2}
@@ -8657,21 +8445,21 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f4f719949abc04cd69b48ad4036a0bbf, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 4c86a066ab862418d807bf5fdc66e1e2, type: 2}
-  - m_RefCount: 26
+  - m_RefCount: 27
     m_Data: {fileID: 11400000, guid: 321ee363833414bbd8bf83f2e024dc81, type: 2}
-  - m_RefCount: 23
+  - m_RefCount: 24
     m_Data: {fileID: 11400000, guid: 882c519614ad74276947318db86f3da7, type: 2}
-  - m_RefCount: 25
+  - m_RefCount: 26
     m_Data: {fileID: 11400000, guid: 0527aeb03c96342fca25d06e837a3d7f, type: 2}
-  - m_RefCount: 19
+  - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: 28e0a5dc615cd49d68c65cbfba96386c, type: 2}
-  - m_RefCount: 38
+  - m_RefCount: 39
     m_Data: {fileID: 11400000, guid: 281ba4bf9f10447439bedb643ef9f6f5, type: 2}
   - m_RefCount: 32
     m_Data: {fileID: 11400000, guid: 4af33cc2a04d740b4addc5299536791d, type: 2}
   - m_RefCount: 44
     m_Data: {fileID: 11400000, guid: 9d9335c0fd59847a19a38b1a9d50ec9a, type: 2}
-  - m_RefCount: 39
+  - m_RefCount: 40
     m_Data: {fileID: 11400000, guid: 4fa3f9c1295e84e6abaa77ee2286d552, type: 2}
   - m_RefCount: 29
     m_Data: {fileID: 11400000, guid: 84bab6a0d668f4bc8802a148a6a9fe6e, type: 2}
@@ -8679,10 +8467,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 20b8ae4a9614941f2841cce3392cf778, type: 2}
   - m_RefCount: 19
     m_Data: {fileID: 11400000, guid: 2d13858813ae54d96b8bc36a361b1a0f, type: 2}
-  - m_RefCount: 14
+  - m_RefCount: 29
     m_Data: {fileID: 11400000, guid: 32676c33f06904c09bfe9000825bef04, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 74
+  - m_RefCount: 82
     m_Data: {fileID: -4784012459933248252, guid: 3fb3cb063d6e14468a2e594b2cae26c8,
       type: 3}
   - m_RefCount: 41
@@ -8699,19 +8487,19 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 8454496485951432912, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 14
+  - m_RefCount: 15
     m_Data: {fileID: 2791019828701745249, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 14
+  - m_RefCount: 12
     m_Data: {fileID: -3723888309292617663, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -1854104798657542905, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 7
     m_Data: {fileID: 2199367877078015815, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: 7798538590798556441, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
   - m_RefCount: 17
@@ -8740,17 +8528,17 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: -8353616333488116140, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 26
+  - m_RefCount: 27
     m_Data: {fileID: 602897388642072225, guid: 21abcadf4713843dba440c4827563052, type: 3}
-  - m_RefCount: 23
+  - m_RefCount: 24
     m_Data: {fileID: -1192224711416115619, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 25
+  - m_RefCount: 26
     m_Data: {fileID: 5216242445839199450, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 19
+  - m_RefCount: 20
     m_Data: {fileID: 831307698735739402, guid: 21abcadf4713843dba440c4827563052, type: 3}
-  - m_RefCount: 38
+  - m_RefCount: 39
     m_Data: {fileID: 8808408681903786621, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
   - m_RefCount: 32
@@ -8759,7 +8547,7 @@ Tilemap:
   - m_RefCount: 44
     m_Data: {fileID: 6806770982697921808, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
-  - m_RefCount: 39
+  - m_RefCount: 40
     m_Data: {fileID: -8724260566406641132, guid: 21abcadf4713843dba440c4827563052,
       type: 3}
   - m_RefCount: 29
@@ -8771,11 +8559,11 @@ Tilemap:
   - m_RefCount: 19
     m_Data: {fileID: -5535259956438692747, guid: 3fb3cb063d6e14468a2e594b2cae26c8,
       type: 3}
-  - m_RefCount: 14
+  - m_RefCount: 29
     m_Data: {fileID: -1985779516752524755, guid: 3fb3cb063d6e14468a2e594b2cae26c8,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 626
+  - m_RefCount: 656
     m_Data:
       e00: 1
       e01: 0
@@ -8794,7 +8582,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 626
+  - m_RefCount: 656
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8865,7 +8653,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.03375, y: 0.6266595}
   m_AnchorMax: {x: 0.42375, y: 0.786276}
@@ -8891,9 +8679,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 25
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -8912,137 +8700,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745962614}
   m_CullTransparentMesh: 0
---- !u!1 &751280011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 751280012}
-  - component: {fileID: 751280015}
-  - component: {fileID: 751280014}
-  - component: {fileID: 751280013}
-  m_Layer: 0
-  m_Name: datalog (8)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &751280012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751280011}
-  m_LocalRotation: {x: -0, y: -0, z: 0.44805375, w: 0.89400667}
-  m_LocalPosition: {x: 183, y: -13.5, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.238003}
---- !u!114 &751280013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751280011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &751280014
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751280011}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &751280015
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751280011}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &766202407
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,11 +8810,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: 6.6000366}
+  m_AnchoredPosition: {x: -0.00024414062, y: 6.5999756}
   m_SizeDelta: {x: -0, y: 13.2}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &780819032
@@ -9229,7 +8886,7 @@ RectTransform:
   - {fileID: 1091384789}
   - {fileID: 214000359}
   m_Father: {fileID: 479574165}
-  m_RootOrder: 5
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9442,7 +9099,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9461,7 +9118,7 @@ GameObject:
   - component: {fileID: 969617744}
   - component: {fileID: 969617743}
   m_Layer: 5
-  m_Name: Lives_Text (2)
+  m_Name: Lives_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9486,9 +9143,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 30
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -9519,7 +9176,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.73625004, y: 0.786276}
   m_AnchorMax: {x: 0.98625004, y: 0.9711837}
@@ -9537,7 +9194,7 @@ GameObject:
   - component: {fileID: 976184747}
   - component: {fileID: 976184746}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9566,6 +9223,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1638676031}
   - {fileID: 1870591015}
   - {fileID: 302893839}
   - {fileID: 279592800}
@@ -9584,14 +9242,8 @@ Transform:
   - {fileID: 1232168108}
   - {fileID: 111718157}
   - {fileID: 1340260663}
-  - {fileID: 1773205870}
-  - {fileID: 751280012}
-  - {fileID: 1543303623}
-  - {fileID: 483784843}
-  - {fileID: 257409282}
-  - {fileID: 53841958}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030509952
 GameObject:
@@ -9604,7 +9256,7 @@ GameObject:
   - component: {fileID: 1030509953}
   - component: {fileID: 1030509954}
   m_Layer: 0
-  m_Name: space center 1 (4)
+  m_Name: spaceCenter6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9622,7 +9274,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1030509954
 SpriteRenderer:
@@ -9761,14 +9413,13 @@ GameObject:
   - component: {fileID: 1160245483}
   - component: {fileID: 1160245486}
   - component: {fileID: 1160245485}
-  - component: {fileID: 1160245484}
-  m_Layer: 0
-  m_Name: datalog (2)
-  m_TagString: Datalog
+  m_Layer: 5
+  m_Name: cloneSam2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1160245483
 Transform:
   m_ObjectHideFlags: 0
@@ -9777,35 +9428,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160245482}
   m_LocalRotation: {x: -0, y: -0, z: 0.17972088, w: -0.9837176}
-  m_LocalPosition: {x: 178.5, y: -14, z: 0}
+  m_LocalPosition: {x: 206, y: -17, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20.707}
---- !u!114 &1160245484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160245482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
 --- !u!61 &1160245485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9962,7 +9590,7 @@ GameObject:
   - component: {fileID: 1185863199}
   - component: {fileID: 1185863200}
   m_Layer: 0
-  m_Name: space center 1 (6)
+  m_Name: spaceCenter8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9980,7 +9608,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1185863200
 SpriteRenderer:
@@ -10042,14 +9670,13 @@ GameObject:
   - component: {fileID: 1232168108}
   - component: {fileID: 1232168111}
   - component: {fileID: 1232168110}
-  - component: {fileID: 1232168109}
   m_Layer: 0
-  m_Name: datalog (4)
-  m_TagString: Datalog
+  m_Name: cloneSam4
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1232168108
 Transform:
   m_ObjectHideFlags: 0
@@ -10058,35 +9685,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232168107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 178, y: -17.75, z: 0}
+  m_LocalPosition: {x: 213.5, y: -17.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232168109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232168107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
 --- !u!61 &1232168110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10295,7 +9899,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
@@ -10327,14 +9931,13 @@ GameObject:
   - component: {fileID: 1340260663}
   - component: {fileID: 1340260666}
   - component: {fileID: 1340260665}
-  - component: {fileID: 1340260664}
   m_Layer: 0
-  m_Name: datalog (6)
-  m_TagString: Datalog
+  m_Name: cloneSam6
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1340260663
 Transform:
   m_ObjectHideFlags: 0
@@ -10342,36 +9945,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340260662}
-  m_LocalRotation: {x: -0, y: -0, z: 0.47124982, w: 0.8819998}
-  m_LocalPosition: {x: 182, y: -17.25, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.17193602, w: 0.98510814}
+  m_LocalPosition: {x: 187, y: -17.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.231003}
---- !u!114 &1340260664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340260662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.801}
 --- !u!61 &1340260665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10646,137 +10226,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430916981}
   m_CullTransparentMesh: 0
---- !u!1 &1543303622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1543303623}
-  - component: {fileID: 1543303626}
-  - component: {fileID: 1543303625}
-  - component: {fileID: 1543303624}
-  m_Layer: 0
-  m_Name: datalog (9)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1543303623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543303622}
-  m_LocalRotation: {x: -0, y: -0, z: 0.23468317, w: -0.97207195}
-  m_LocalPosition: {x: 185, y: -14.5, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -27.146002}
---- !u!114 &1543303624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543303622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &1543303625
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543303622}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &1543303626
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543303622}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1583713980
 GameObject:
   m_ObjectHideFlags: 0
@@ -10788,7 +10237,7 @@ GameObject:
   - component: {fileID: 1583713981}
   - component: {fileID: 1583713982}
   m_Layer: 0
-  m_Name: space center 1 (3)
+  m_Name: spaceCenter5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10806,7 +10255,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1583713982
 SpriteRenderer:
@@ -10887,7 +10336,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10940,7 +10389,7 @@ GameObject:
   - component: {fileID: 1638676029}
   - component: {fileID: 1638676028}
   m_Layer: 0
-  m_Name: Background (1)
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11018,8 +10467,44 @@ Transform:
   m_LocalScale: {x: 300, y: 94.62351, z: 1}
   m_Children:
   - {fileID: 766202408}
+  m_Father: {fileID: 976184747}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1715152142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715152143}
+  m_Layer: 0
+  m_Name: GameManagingTools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1715152143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715152142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 343, y: 196.46158, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 20626515}
+  - {fileID: 175553244}
+  - {fileID: 2136239405}
+  - {fileID: 308044142}
+  - {fileID: 284572221}
+  - {fileID: 1899779077}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744545257
 GameObject:
@@ -11091,137 +10576,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744545257}
   m_CullTransparentMesh: 0
---- !u!1 &1773205869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1773205870}
-  - component: {fileID: 1773205873}
-  - component: {fileID: 1773205872}
-  - component: {fileID: 1773205871}
-  m_Layer: 0
-  m_Name: datalog (7)
-  m_TagString: Datalog
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1773205870
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773205869}
-  m_LocalRotation: {x: -0, y: -0, z: 0.98714185, w: 0.15984717}
-  m_LocalPosition: {x: 182, y: -15.5, z: 0}
-  m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
-  m_Children: []
-  m_Father: {fileID: 976184747}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -198.396}
---- !u!114 &1773205871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773205869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d1f4f15ba8b4ae08e48a6420a1c562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Datalog#4
-    sentences:
-    - 'After some personal investigations, '
-    - I found a hatch near radar and communications that seems to head directly to
-      my shelter.
-    - "I think it\u2019s an entrance to the basement."
-  noDatalog:
-    name: 
-    sentences: []
-  animator: {fileID: 0}
---- !u!61 &1773205872
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773205869}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49722058}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.2855588}
-  m_EdgeRadius: 0
---- !u!212 &1773205873
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773205869}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 148184803
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1812977087
 GameObject:
   m_ObjectHideFlags: 0
@@ -11278,7 +10632,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
@@ -11570,7 +10924,7 @@ GameObject:
   - component: {fileID: 1870591017}
   - component: {fileID: 1870591016}
   m_Layer: 0
-  m_Name: datalog
+  m_Name: Datalog
   m_TagString: Datalog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11583,13 +10937,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870591014}
-  m_LocalRotation: {x: -0, y: -0, z: 0.32540992, w: -0.9455731}
-  m_LocalPosition: {x: 180.5, y: -18, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.007249437, w: 0.9999738}
+  m_LocalPosition: {x: 179.5, y: -17.5, z: 0}
   m_LocalScale: {x: 1.33556, y: 1.33556, z: 1.33556}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -37.981003}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.83100003}
 --- !u!114 &1870591016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11603,11 +10957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Watson
+    name: ???
     sentences:
-    - 'yo you are clone
-
-'
+    - 'Planned Expiration for Sam 4301 will in 10 days. '
+    - Will start to initiate Sam 4302 in 8 days.
   noDatalog:
     name: 
     sentences: []
@@ -11629,7 +10982,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 1.28}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11676,7 +11029,7 @@ SpriteRenderer:
   m_SortingLayerID: 148184803
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df3eeea5b0ba64fefaff4c09317caebd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7d20a2f685e340d9b16e5007ca6a743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11726,12 +11079,82 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899779075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -343, y: -196.46158, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1715152143}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2062256420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062256423}
+  - component: {fileID: 2062256422}
+  - component: {fileID: 2062256421}
+  m_Layer: 5
+  m_Name: ChangedWatson
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2062256421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062256420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: bd881121169f24cd8aa9e4725449d699, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &2062256422
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062256420}
+  m_CullTransparentMesh: 0
+--- !u!224 &2062256423
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062256420}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 479574165}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -144.00002, y: 30}
+  m_SizeDelta: {x: 199, y: 201.6}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2066606192
 GameObject:
   m_ObjectHideFlags: 0
@@ -11744,12 +11167,12 @@ GameObject:
   - component: {fileID: 2066606195}
   - component: {fileID: 2066606194}
   m_Layer: 5
-  m_Name: PauseMenu (1)
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2066606193
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11766,7 +11189,7 @@ RectTransform:
   - {fileID: 1866145014}
   - {fileID: 99327433}
   m_Father: {fileID: 479574165}
-  m_RootOrder: 6
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11845,7 +11268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd881121169f24cd8aa9e4725449d699, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7d20a2f685e340d9b16e5007ca6a743, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -11875,7 +11298,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 479574165}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11960,7 +11383,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136239403
 GameObject:
@@ -12000,11 +11423,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136239403}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.212906, y: 16.874493, z: -3168.4187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -251.7871, y: -179.58708, z: -3168.4187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1715152143}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2139336385
@@ -12018,7 +11441,7 @@ GameObject:
   - component: {fileID: 2139336386}
   - component: {fileID: 2139336387}
   m_Layer: 0
-  m_Name: space center 1 (1)
+  m_Name: spaceCenter3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12036,7 +11459,7 @@ Transform:
   m_LocalScale: {x: 2.2818573, y: 1.6600269, z: 0.8207434}
   m_Children: []
   m_Father: {fileID: 976184747}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2139336387
 SpriteRenderer:

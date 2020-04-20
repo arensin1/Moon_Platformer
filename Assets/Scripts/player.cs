@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(SceneManager.GetActiveScene ().buildIndex >7 ){
+            controller.clue_collect = true;
+        }
         if(Input.GetKeyDown("e") && controller.trigger)
              {
                 Debug.Log("pressed e");

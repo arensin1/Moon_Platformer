@@ -41,6 +41,15 @@ public class Pause : MonoBehaviour
     
     public void StartOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*starting over the global variables for the same level
+        pauseMenuUI.SetActive(false);
+        animator.SetBool("Objective", false);
+        animator.SetBool("Datalog", false);
+        animator.SetBool("EndofConvo", false);
+        Sam.obj_complete = false;
+        Sam.clue_collect = false;
+        isOn = false;
+        */
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
