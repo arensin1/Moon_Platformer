@@ -7,13 +7,26 @@ public class music_on_off : MonoBehaviour
     public AudioSource music;
     public Pause pause_menu;
     public Animator animator;
-    bool musicOn;
+    
     void Start()
     {
-        musicOn = true;
+        Debug.Log("Start");
+         if(DataHolder.MusicOn)
+        {
+            music.Play();
+            DataHolder.MusicOn = true;
+            Debug.Log("Music_On");
+        }
+        else
+        {
+            music.Pause();
+            DataHolder.MusicOn = false;
+            Debug.Log("Music_Off");
+        }
     }
 
     void Update(){
+        
         if(pause_menu.isOn || !animator.GetBool("EndofConvo"))
         {
             music.volume = 0.15f;
@@ -27,15 +40,15 @@ public class music_on_off : MonoBehaviour
 
     public void MusicSwitch()
     {
-        if(musicOn)
+        if(DataHolder.MusicOn)
         {
-            music.volume = 0;
-            musicOn = false;
+            music.Pause();
+            DataHolder.MusicOn = false;
         }
         else
         {
-            music.volume = 1;
-            musicOn = true;
+            music.Play();
+            DataHolder.MusicOn = true;
         }
     }
 

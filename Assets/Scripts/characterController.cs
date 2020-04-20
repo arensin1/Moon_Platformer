@@ -16,13 +16,15 @@ public class characterController : MonoBehaviour
     private bool m_Grounded = false;  //boolean if character is grounded
     private Vector3 m_Velocity = Vector3.zero; //setting velocity to zero
     Collision2D collision; 
-    
     public bool clue_collect = false; //check if clue is found
     public GameController gameController;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public UnityEvent OnLandEvent;
     public Animator animator_UI;
     public player Sam;
+    public GameObject Inter_Text;
+    public bool trigger;
+    
     private void Awake()
     {
         ourRigidbody = GetComponent<Rigidbody2D>();
@@ -33,7 +35,7 @@ public class characterController : MonoBehaviour
     }
 
 
-    
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -54,20 +56,25 @@ public class characterController : MonoBehaviour
                 animator_UI.SetBool("Datalog", true);
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
-            else if (other.gameObject.CompareTag("objective"))
-            {   
-                if(clue_collect){
-                    animator_UI.SetBool("Notyet",false);
-                    animator_UI.SetBool("ChangeFace", true);
-                    obj_complete = true;
-                }else{
-                    animator_UI.SetBool("Notyet",true);
-                }
-                animator_UI.SetBool("Objective", true);
-                other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
-                
+            else if(other.gameObject.CompareTag ("objective")){
+                trigger = true;
             }
         }
+
+    void OnTriggerStay2D (Collider2D other_obj){
+        if (other_obj.gameObject.CompareTag("objective"))
+            {   
+                Inter_Text.SetActive(true);
+            }
+    }
+
+    void OnTriggerExit2D (Collider2D obj_other){
+        if (obj_other.gameObject.CompareTag("objective"))
+        {
+            trigger = false;
+            Inter_Text.SetActive(false);
+        }
+    }
     
     public void Move(float move, bool jump)
     {

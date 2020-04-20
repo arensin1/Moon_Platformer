@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
@@ -10,19 +11,31 @@ public class player : MonoBehaviour
     bool jump = false;
     public Animator animator;
     public bool isDialogueOn;
- 
+    public Animator ani_Dialog;
+    public GameObject objective;
+    public Text Live_text;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if(Input.GetKeyDown("e") && controller.trigger)
+             {
+                Debug.Log("pressed e");
+                if(controller.clue_collect){
+                    ani_Dialog.SetBool("Notyet",false);
+                    ani_Dialog.SetBool("ChangeFace", true);
+                    controller.obj_complete = true;
+                 }else{
+                    ani_Dialog.SetBool("Notyet",true);
+                }
+                ani_Dialog.SetBool("Objective", true);
+                objective.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+              }
         //getting user input for jump and horizontal movement
         if(!isDialogueOn){
+            Live_text.text = "Lives:" + " " + DataHolder.Lives; 
             animator.enabled = true;
             hori = Input.GetAxisRaw("Horizontal") * runningSpeed;
             animator.SetFloat("Speed", Mathf.Abs(hori));// getting the absolute value of horizontal movement since going left will give neg values
@@ -33,6 +46,7 @@ public class player : MonoBehaviour
             }
         }else{
             animator.enabled=false;
+            
         }
     }
 

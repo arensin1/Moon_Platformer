@@ -2,26 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public characterController Sam;
     public player player;
     public Animator animator;
+    public Animator dialog_ani;
     public Loading_Scenes loader;
-    
 
-    // Start is called before the first frame update
 
     
     
     // win situation
     public void winSituation()
     {
-       if(Sam.obj_complete){
-           loader.Load_Next_Scene();
+       if(Sam.obj_complete && dialog_ani.GetBool("EndofConvo")){
+
+           StartCoroutine(LoadScene());
        }
 
+    }
+    private IEnumerator LoadScene()
+    {
+        
+        yield return new WaitForSeconds(1.5f);
+        loader.Load_Next_Scene();
     }
 
     //lose situation 1 : falling down
@@ -31,6 +38,14 @@ public class GameController : MonoBehaviour
         if(Sam.ourRigidbody.position.y < -20){
             stoppingTheGame();
             Sam.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
+            DataHolder.Lives -= 1;
+            if(DataHolder.Lives > 0){
+                SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+            }
+            else {
+                SceneManager.LoadScene(0);
+            }
+            
         }
     }
 
@@ -38,10 +53,12 @@ public class GameController : MonoBehaviour
     {
         player.enabled = false;
         animator.enabled = false;
+        
     }
 
     public void startingTheGame(){
         player.enabled = true;
         animator.enabled = true;
+        
     }
 }

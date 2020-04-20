@@ -18,7 +18,7 @@ public class Camera_overview : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if(animator.GetBool("EndofConvo") && !manager.Datalog.gameObject.active)
+        if(animator.GetBool("EndofConvo"))
         {
             transform.position = Vector3.SmoothDamp(this.transform.position,position ,
         ref velocity, smoothing);

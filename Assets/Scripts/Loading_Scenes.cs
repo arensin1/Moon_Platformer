@@ -26,6 +26,7 @@ public class Loading_Scenes : MonoBehaviour
               SceneManager.LoadScene(0);
         }
         
+        
     }
    /* void Restart_Level()
     {
