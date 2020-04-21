@@ -11,6 +11,7 @@ public class DialogueTrigger : MonoBehaviour {
 
 	public void TriggerDialogue()
 	{
+		//if the player accesses the objective before accessing datalog, then different text will appear.
 		if ((!animator.GetBool("Datalog"))&&animator.GetBool("Objective")){
 			FindObjectOfType<DialogueManager>().StartDialogue(noDatalog);
 		}else{
