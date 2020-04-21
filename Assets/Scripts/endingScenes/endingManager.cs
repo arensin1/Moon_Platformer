@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//ending scenes (winning and losing) shouldn't require the player movement related scripts.
 public class endingManager : MonoBehaviour {
 
 	public Animator animator;
@@ -15,12 +16,13 @@ public class endingManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	// Use this for initialization
+	// sentences will be the dialogue queue where we'll extract in FIFO order
 	void Start () {
 		sentences = new Queue<string>();
 		
 	}
 	
+	//sets certain UI menu's availabilty and starts the dialogue
 	public void StartDialogue (Dialogue dialogue)
 	{
 		button.gameObject.SetActive(true);
@@ -36,6 +38,7 @@ public class endingManager : MonoBehaviour {
 		DisplayNextSentence();
 	}
 
+//loops the queue of the dialogue until it's the end of the queue.
 	public void DisplayNextSentence ()
 	{
 		if (sentences.Count == 0)
@@ -59,6 +62,7 @@ public class endingManager : MonoBehaviour {
 		}
 	}
 
+//End of the endingscene would directly lead to the credits scene (12).
 	void EndDialogue()
 	{
         animator.SetBool("Notyet", false);

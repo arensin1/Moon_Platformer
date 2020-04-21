@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//this class manages what happens behind the conversation parts with Watson and Datalogs.
 public class DialogueManager : MonoBehaviour {
 
 	public Animator animator;
@@ -18,12 +19,13 @@ public class DialogueManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	// Use this for initialization
+	// sentences will be the dialogue queue where we'll extract in FIFO order
 	void Start () {
 		sentences = new Queue<string>();
 		
 	}
-	
+	//resetting some booleans for animator and player script.
+	//sets certain UI menu's availabilty and starts the dialogue
 	public void StartDialogue (Dialogue dialogue)
 	{
 		Sam.isDialogueOn = true;
@@ -55,6 +57,7 @@ public class DialogueManager : MonoBehaviour {
 		DisplayNextSentence();
 	}
 
+//loops the queue of the dialogue until it's the end of the queue.
 	public void DisplayNextSentence ()
 	{
 		if (sentences.Count == 0)
@@ -78,6 +81,7 @@ public class DialogueManager : MonoBehaviour {
 		}
 	}
 
+//End of the dialogue will reset certain animator booleans 
 	void EndDialogue()
 	{
 		Datalog.gameObject.SetActive(false);

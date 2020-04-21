@@ -91,11 +91,11 @@ public class GameController : MonoBehaviour
         }
     }
 
+//stop and start are used for the certain pausing parts of the game.
     public void stoppingTheGame()
     {
         player.enabled = false;
         animator.enabled = false;
-        
         
     }
 

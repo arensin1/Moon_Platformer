@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Dialogue will be the object we pass around for the conversation with Watson and Datalogs.
 [System.Serializable]
 public class Dialogue {
 

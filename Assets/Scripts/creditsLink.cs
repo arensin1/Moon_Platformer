@@ -1,6 +1,7 @@
 ﻿  using UnityEngine;
   using System.Collections;
   
+  //links to the creators' linkedin page.
   public class creditsLink : MonoBehaviour
   {
       public void OpenYoungJieURL()
