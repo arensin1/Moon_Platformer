@@ -43,7 +43,9 @@ public class GameController : MonoBehaviour
                 counter.text = "Time Left: " +timeValue.ToString("0");
                 //lose if situation is lost
                 if(timeValue <= 0){
-                    SceneManager.LoadScene(11); //less time-> losing scene
+                    animator.SetBool("EndofConvo", true);
+                    animator.SetBool("Notyet", false);
+                    SceneManager.LoadScene(10); //less time-> losing scene
                 }
             }
             
@@ -70,20 +72,18 @@ public class GameController : MonoBehaviour
     //lost situation 2 (on top of this code) : time's up
     public void loseSituation()
     {
-        if(Sam.ourRigidbody.position.y < -20 || timeValue <= 0){
+        if(Sam.ourRigidbody.position.y < -20 ){
             stoppingTheGame();
             //freezing body and subtracting lives
             Sam.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
             DataHolder.Lives -= 1;
             if(DataHolder.Lives > 0){
                 //pause game to stop counter
-                Time.timeScale =0;
                 //death ui will appear
                 Death_Screen.SetActive(true);
             }
             else {
                 //pause game to stop counter
-                Time.timeScale =0;
                 //game over ui will appear 
                 Game_Over_Screen.SetActive(true);
             }

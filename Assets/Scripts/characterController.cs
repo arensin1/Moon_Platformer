@@ -62,7 +62,9 @@ public class characterController : MonoBehaviour
                 //setting trigger to true for further use
                 trigger = true;
             }else if(other.gameObject.CompareTag("portal")){
-                SceneManager.LoadScene(12);
+                animator_UI.SetBool("EndofConvo", true);
+                animator_UI.SetBool("Notyet", false);
+                SceneManager.LoadScene(11);
             }
         }
 
