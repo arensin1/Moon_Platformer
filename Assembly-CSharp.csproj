@@ -45,23 +45,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Camera_overview.cs" />
-     <Compile Include="Assets\Scripts\camera_scene.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\characterController.cs" />
-     <Compile Include="Assets\Scripts\creditsLink.cs" />
-     <Compile Include="Assets\Scripts\DataHolder.cs" />
-     <Compile Include="Assets\Scripts\Dialogue.cs" />
-     <Compile Include="Assets\Scripts\DialogueManager.cs" />
-     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\camera\Camera_overview.cs" />
+     <Compile Include="Assets\Scripts\camera\camera_scene.cs" />
+     <Compile Include="Assets\Scripts\camera\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\characterMovement\characterController.cs" />
+     <Compile Include="Assets\Scripts\characterMovement\player.cs" />
+     <Compile Include="Assets\Scripts\Dialogues\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Dialogues\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\Dialogues\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\endingScenes\endingManager.cs" />
      <Compile Include="Assets\Scripts\endingScenes\endingTrigger.cs" />
-     <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\Loading_Scenes.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\music_on_off.cs" />
-     <Compile Include="Assets\Scripts\Pause.cs" />
-     <Compile Include="Assets\Scripts\player.cs" />
+     <Compile Include="Assets\Scripts\gameControl\creditsLink.cs" />
+     <Compile Include="Assets\Scripts\gameControl\DataHolder.cs" />
+     <Compile Include="Assets\Scripts\gameControl\GameController.cs" />
+     <Compile Include="Assets\Scripts\gameControl\Loading_Scenes.cs" />
+     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\UI\music_on_off.cs" />
+     <Compile Include="Assets\Scripts\UI\Pause.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
