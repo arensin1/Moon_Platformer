@@ -15,12 +15,17 @@ public class player : MonoBehaviour
     public Animator ani_Dialog; // dialog animations
     public GameObject objective; // objective for level
     public Text Live_text; // Text for Lives Counter
+    RigidbodyConstraints2D originalConstraints;
 
+    void Start()
+    {
+        originalConstraints = controller.ourRigidbody.constraints;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene ().buildIndex >=5){
+        if(SceneManager.GetActiveScene ().buildIndex ==5 || SceneManager.GetActiveScene ().buildIndex >=7 ){
             //setting this to true so that collecting clues becomes optional
             //this is implemented to ensure player can go to alternative levels
             //based on if they collect certain clues
@@ -48,6 +53,7 @@ public class player : MonoBehaviour
         
         if(!isDialogueOn){
             //Putting on ui text for lives counter and pause instructions
+            controller.ourRigidbody.constraints = originalConstraints;
             Live_text.text = "Lives:" + " " + DataHolder.Lives +"\n" + "Press 'esc' to pause"; 
             animator.enabled = true; // turn animator on
             //getting user input for jump and horizontal movement
@@ -59,6 +65,7 @@ public class player : MonoBehaviour
                 animator.SetBool("isJumping", true);
             }
         }else{
+            controller.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
             animator.enabled=false;
             
         }

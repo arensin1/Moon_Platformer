@@ -730,7 +730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.4, y: 7.12, z: 0}
+  m_LocalPosition: {x: -12.4, y: 4.4, z: 0}
   m_LocalScale: {x: 1.2037091, y: 1.2596171, z: 0.24605738}
   m_Children:
   - {fileID: 937606359}
@@ -9089,7 +9089,7 @@ MonoBehaviour:
     - 'You are in danger! '
     - 'The company we work for is just using you and will come to exterminate you. '
     - "There\u2019s a trash compartment that they come to collect. "
-    - Try to find it and stow away in there.
+    - Try to find it and stow away in there in the next few days.
   noDatalog:
     name: 
     sentences: []

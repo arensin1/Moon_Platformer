@@ -74,8 +74,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
@@ -1189,6 +1187,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -1607,7 +1607,7 @@ ScriptsOnlyBuild:
     className: NetworkTransformVisualizer
   - hash:
       serializedVersion: 2
-      Hash: 5d3b276c29461f527692b17f57c22ff5
+      Hash: bd15980def217d1d79ca07b5561e13b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -1986,4 +1986,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LosingScene.unity
   - Assets/Scenes/WInningScene.unity
   - Assets/Scenes/Credits.unity
-  playerPath: /Users/youngjie/Desktop/TESTINGtheMOON.app
+  playerPath: /Users/alexrensing/Documents/projects/prototypeECS/Game Build/MOON_Game.app

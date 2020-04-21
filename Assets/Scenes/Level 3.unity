@@ -12754,7 +12754,7 @@ TilemapCollider2D:
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 6e62e4339d652429b8eea1b06640f413, type: 2}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000

@@ -14,25 +14,18 @@ public class GameController : MonoBehaviour
     public GameObject Death_Screen;
     public GameObject Game_Over_Screen;
     float timeValue; 
-    float current_time;
+
     public Text counter; // time counter text
     public Camera cam_over; //camera overview
-    public AudioSource music; //music
+
 
     
     void Start(){
-        timeValue = 90f; // set timer
+        timeValue = 45f; // set timer
+       
     }
-    void Update(){
-        //transitioning music off at end of level
-        //using lerp to decrease volume over time
-        if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex < 10){
-            if(dialog_ani.GetBool("EndofConvo") && !dialog_ani.GetBool("Notyet")){
-                    current_time += Time.deltaTime;
-                    music.volume = Mathf.Lerp(music.volume, 0f, current_time/3f);
-                }
-        }
-    }
+  
+        
     void FixedUpdate(){
         //For scene 7 use a timer
         if(SceneManager.GetActiveScene().buildIndex == 7){
@@ -72,7 +65,7 @@ public class GameController : MonoBehaviour
     //lost situation 2 (on top of this code) : time's up
     public void loseSituation()
     {
-        if(Sam.ourRigidbody.position.y < -20 ){
+        if(Sam.ourRigidbody.position.y < -30 ){
             stoppingTheGame();
             //freezing body and subtracting lives
             Sam.ourRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
