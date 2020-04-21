@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void credits(){
         //credits
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(12);
     }
 
     public void goBackMenu(){

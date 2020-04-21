@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
     void Update(){
         //transitioning music off at end of level
         //using lerp to decrease volume over time
-        if(SceneManager.GetActiveScene().buildIndex != 0 || SceneManager.GetActiveScene().buildIndex != 10){
+        if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex < 10){
             if(dialog_ani.GetBool("EndofConvo") && !dialog_ani.GetBool("Notyet")){
                     current_time += Time.deltaTime;
                     music.volume = Mathf.Lerp(music.volume, 0f, current_time/3f);
@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour
                 counter.text = "Time Left: " +timeValue.ToString("0");
                 //lose if situation is lost
                 if(timeValue <= 0){
-                    loseSituation();
+                    SceneManager.LoadScene(11); //less time-> losing scene
                 }
             }
             

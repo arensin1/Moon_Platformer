@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 7 alt.unity
     guid: 10e55dda71c714485afddbb474eef109
   - enabled: 1
+    path: Assets/Scenes/LosingScene.unity
+    guid: 8ee77461f9fe04fc291de74b382bbc48
+  - enabled: 1
+    path: Assets/Scenes/WInningScene.unity
+    guid: 638d9035badd8433f99987c0a118d1ed
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 7e55406329e72451fa8c176aa3715e2d
   m_configObjects: {}

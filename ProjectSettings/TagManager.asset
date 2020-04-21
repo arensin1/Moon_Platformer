@@ -12,6 +12,8 @@ TagManager:
   - DatalogImage
   - WatsonImage
   - stopWatch
+  - portal
+  - drill
   layers:
   - Default
   - TransparentFX

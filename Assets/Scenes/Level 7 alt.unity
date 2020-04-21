@@ -230,7 +230,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -549,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18, y: 2.9, z: 0}
+  m_LocalPosition: {x: 199.7, y: -13.3, z: 0}
   m_LocalScale: {x: 1.2037091, y: 1.2596171, z: 0.24605738}
   m_Children:
   - {fileID: 937606359}
@@ -7487,7 +7487,7 @@ GameObject:
   - component: {fileID: 671237896}
   - component: {fileID: 671237895}
   m_Layer: 5
-  m_Name: GameOver (5)
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7543,7 +7543,7 @@ RectTransform:
   - {fileID: 1483198707}
   - {fileID: 548974998}
   m_Father: {fileID: 875242287}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7580,7 +7580,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7859,7 +7859,7 @@ RectTransform:
   - {fileID: 741793714}
   - {fileID: 828024329}
   m_Father: {fileID: 875242287}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7966,8 +7966,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 148184803
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ca73fdeb0665f43098aba4ee00a0fd5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8226,6 +8226,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1562722507}
   - {fileID: 1939069039}
   - {fileID: 1582152916}
   - {fileID: 698686538}
@@ -8236,7 +8237,6 @@ RectTransform:
   - {fileID: 671237897}
   - {fileID: 1618287624}
   - {fileID: 1201425515}
-  - {fileID: 1562722507}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8624,7 +8624,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8736,12 +8736,9 @@ MonoBehaviour:
   dialogue:
     name: Watson
     sentences:
-    - Sam there is a problem with the communication tower.
-    - Transmissions are blocked.
-    - In order to achieve communication with the outside,
-    - you must travel to the tower and repair it.
-    - Remember Sam you only have a limited air supply
-    - so you must hurry when out there and be cautious not to take any bad falls.
+    - Sir, the drill seems to be experiencing technical difficulties. Could you please
+      go and examine it
+    - Could you please go and examine it?
   noDatalog:
     name: 
     sentences: []
@@ -8802,7 +8799,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: cc408ae4dc449490da14a418ee934e56, type: 3}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
@@ -8853,11 +8850,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.1000366}
+  m_AnchoredPosition: {x: 0, y: -2.0999756}
   m_SizeDelta: {x: 0, y: 21.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201425516
@@ -9029,7 +9026,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
@@ -9235,7 +9232,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
@@ -9326,8 +9323,8 @@ MonoBehaviour:
   dialogueText: {fileID: 741793715}
   button: {fileID: 828024330}
   triggerButton: {fileID: 1060172936}
-  ChangedFace: {fileID: 0}
-  Datalog: {fileID: 148662320}
+  ChangedFace: {fileID: 1060172934}
+  Datalog: {fileID: 1060172934}
   Sam: {fileID: 412189701}
 --- !u!4 &1562722507
 Transform:
@@ -9341,7 +9338,7 @@ Transform:
   m_LocalScale: {x: 1.1661807, y: 1.1661807, z: 1.1661807}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582152913
 GameObject:
@@ -9355,7 +9352,7 @@ GameObject:
   - component: {fileID: 1582152915}
   - component: {fileID: 1582152914}
   m_Layer: 5
-  m_Name: Lives_Text (3)
+  m_Name: 'Lives_Text '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9380,9 +9377,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -9413,7 +9410,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.73625004, y: 0.786276}
   m_AnchorMax: {x: 0.98625004, y: 0.9711837}
@@ -9476,7 +9473,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
@@ -9509,7 +9506,7 @@ GameObject:
   - component: {fileID: 1618287623}
   - component: {fileID: 1618287622}
   m_Layer: 5
-  m_Name: Death (1)
+  m_Name: Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9565,7 +9562,7 @@ RectTransform:
   - {fileID: 1946333523}
   - {fileID: 203028361}
   m_Father: {fileID: 875242287}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9686,7 +9683,7 @@ GameObject:
   - component: {fileID: 1772087236}
   - component: {fileID: 1772087235}
   m_Layer: 5
-  m_Name: PauseMenu (3)
+  m_Name: 'PauseMenu '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9744,7 +9741,7 @@ RectTransform:
   - {fileID: 1943736702}
   - {fileID: 535042117}
   m_Father: {fileID: 875242287}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9874,12 +9871,13 @@ MonoBehaviour:
   dialogue:
     name: Watson
     sentences:
-    - 'Tower has been fixed. It was a simple connection issue. '
+    - '[DRILL]: Resetting System...System Reset...Success'
+    - The drill is up and running now.
   noDatalog:
     name: Watson
     sentences:
-    - Hey Sam, I think I need some time take a look at this issue.
-    - Why don't you take a walk while I compute the best solution?
+    - '[DRILL]: Resetting System...System Reset...Success'
+    - The drill is up and running now.
   animator: {fileID: 875242288}
 --- !u!1 &1939069038
 GameObject:
@@ -9911,7 +9909,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875242287}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.03375, y: 0.6266595}
   m_AnchorMax: {x: 0.42375, y: 0.786276}
@@ -9937,9 +9935,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3072c4548b1004815b72effe067b1f16, type: 3}
     m_FontSize: 25
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40

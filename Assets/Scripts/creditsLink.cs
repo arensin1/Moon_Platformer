@@ -13,7 +13,7 @@
       }
       public void OpenMusicURL()
       {
-          Application.OpenURL("https://www.linkedin.com/in/young-jie-cho/");
+          Application.OpenURL("https://www.linkedin.com/in/jjbalisan/");
       }
   
   }

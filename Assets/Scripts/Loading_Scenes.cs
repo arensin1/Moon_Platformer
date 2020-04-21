@@ -18,7 +18,7 @@ public class Loading_Scenes : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex ==5 && !animator.GetBool("Datalog")){
             SceneManager.LoadScene(8);
         }
-        else if((SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 9))
+        else if(SceneManager.GetActiveScene().buildIndex != 7)
         {
             //loading next scenes and resetting values
             animator.SetBool("Objective", false);
@@ -27,23 +27,10 @@ public class Loading_Scenes : MonoBehaviour
             Sam.obj_complete = false;
             Sam.clue_collect = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
-        }else
-         {
-             //loading to the menu if game is finished
-            animator.SetBool("Objective", false);
-            animator.SetBool("Datalog", false);
-            animator.SetBool("EndofConvo", false);
-            Sam.obj_complete = false;
-            Sam.clue_collect = false;
-            SceneManager.LoadScene(0);
         }
         
         
     }
 
-   /* void Restart_Level()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
-    }
-    */
+  
 }

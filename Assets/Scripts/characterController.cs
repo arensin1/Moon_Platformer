@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class characterController : MonoBehaviour
 {
@@ -60,6 +61,8 @@ public class characterController : MonoBehaviour
             else if(other.gameObject.CompareTag ("objective")){
                 //setting trigger to true for further use
                 trigger = true;
+            }else if(other.gameObject.CompareTag("portal")){
+                SceneManager.LoadScene(12);
             }
         }
 

@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\endingScenes\endingManager.cs" />
+     <Compile Include="Assets\Scripts\endingScenes\endingTrigger.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Loading_Scenes.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />

@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 107055668}
   - component: {fileID: 107055667}
   m_Layer: 5
-  m_Name: Death (4)
+  m_Name: Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,6 +581,9 @@ MonoBehaviour:
   loader: {fileID: 777631287}
   Death_Screen: {fileID: 107055665}
   Game_Over_Screen: {fileID: 1431915595}
+  counter: {fileID: 0}
+  cam_over: {fileID: 0}
+  music: {fileID: 0}
 --- !u!1 &308044139
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412189694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138, y: 42.4, z: 0}
+  m_LocalPosition: {x: 171.2, y: 11.8, z: 0}
   m_LocalScale: {x: 1.2037091, y: 1.2596171, z: 0.24605738}
   m_Children:
   - {fileID: 937606359}
@@ -9296,7 +9299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.1000366}
+  m_AnchoredPosition: {x: 0, y: -2.0999756}
   m_SizeDelta: {x: 0, y: 21.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372443662
@@ -9404,7 +9407,7 @@ GameObject:
   - component: {fileID: 1431915598}
   - component: {fileID: 1431915597}
   m_Layer: 5
-  m_Name: GameOver (7)
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
