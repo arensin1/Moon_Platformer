@@ -54,9 +54,11 @@ public class characterController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 clue_collect = true;
                 animator_UI.SetBool("Datalog", true);
+                //trigger dialogue
                 other.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
             else if(other.gameObject.CompareTag ("objective")){
+                //setting trigger to true for further use
                 trigger = true;
             }
         }
@@ -64,6 +66,7 @@ public class characterController : MonoBehaviour
     void OnTriggerStay2D (Collider2D other_obj){
         if (other_obj.gameObject.CompareTag("objective"))
             {   
+                //when touching objective interactive test appears
                 Inter_Text.SetActive(true);
             }
     }
@@ -71,6 +74,8 @@ public class characterController : MonoBehaviour
     void OnTriggerExit2D (Collider2D obj_other){
         if (obj_other.gameObject.CompareTag("objective"))
         {
+            //when touching objective interactive test disappears 
+            //trigger is turned off
             trigger = false;
             Inter_Text.SetActive(false);
         }

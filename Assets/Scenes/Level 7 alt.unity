@@ -400,8 +400,9 @@ MonoBehaviour:
   loader: {fileID: 1708473668}
   Death_Screen: {fileID: 1618287621}
   Game_Over_Screen: {fileID: 671237894}
-  timeValue: 0
   counter: {fileID: 0}
+  cam_over: {fileID: 0}
+  music: {fileID: 479058867}
 --- !u!1 &308044139
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,12 +7,13 @@ public class Pause : MonoBehaviour
 {
     
     public GameObject pauseMenuUI;
-    public bool isOn;
-    // Start is called before the first frame update
+    public bool isOn; // check if pause is on or off
+  
  
     // Update is called once per frame
     void Update()
     {
+        //prssing escape turns off or on pause menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (Time.timeScale ==0){
@@ -30,26 +31,21 @@ public class Pause : MonoBehaviour
     }
     public void Resume()
     {
+        //resume game
         Time.timeScale =1;
         pauseMenuUI.SetActive(false);
     }
     public void Menu()
     {
+        //go back to start menu
         Time.timeScale =1;
          SceneManager.LoadScene(0);
     }
     
     public void StartOver()
     {
-        /*starting over the global variables for the same level
-        pauseMenuUI.SetActive(false);
-        animator.SetBool("Objective", false);
-        animator.SetBool("Datalog", false);
-        animator.SetBool("EndofConvo", false);
-        Sam.obj_complete = false;
-        Sam.clue_collect = false;
-        isOn = false;
-        */
+        
+        //start over
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

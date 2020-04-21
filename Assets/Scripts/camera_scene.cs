@@ -15,7 +15,7 @@ public class camera_scene : MonoBehaviour
     {
         main.gameObject.SetActive(false);
         overview.gameObject.SetActive(true);
-        
+        //turn on the camera that will give an overview of the game
     }
 
     // Update is called once per frame
@@ -26,7 +26,8 @@ public class camera_scene : MonoBehaviour
         float x_position = overview.transform.position.x;
         if((target.x - x_position) < 2)
         {
-           
+           //after it overview camera get's close to the target 
+           //switch to main camera
             overview.gameObject.SetActive(false);
             main.gameObject.SetActive(true);
         }

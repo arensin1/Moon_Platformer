@@ -620,6 +620,7 @@ MonoBehaviour:
   Game_Over_Screen: {fileID: 1946333522}
   counter: {fileID: 1355285482}
   cam_over: {fileID: 2099780906}
+  music: {fileID: 875770386}
 --- !u!1 &291025994
 GameObject:
   m_ObjectHideFlags: 0

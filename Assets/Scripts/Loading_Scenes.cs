@@ -9,15 +9,18 @@ public class Loading_Scenes : MonoBehaviour
     // Start is called before the first frame update
     //use when endofConvo is true & Dialoguename = Dialogue 
     
-    public Animator animator;
+    public Animator animator; // ui animator
     public characterController Sam;
     public void Load_Next_Scene()
     {
+        //if player doesn't complete a step at Level 5
+        //they'll be sent to alternative levels
         if(SceneManager.GetActiveScene().buildIndex ==5 && !animator.GetBool("Datalog")){
             SceneManager.LoadScene(8);
         }
         else if((SceneManager.GetActiveScene().buildIndex != 7 || SceneManager.GetActiveScene().buildIndex != 9))
         {
+            //loading next scenes and resetting values
             animator.SetBool("Objective", false);
             animator.SetBool("Datalog", false);
             animator.SetBool("EndofConvo", false);
@@ -26,6 +29,7 @@ public class Loading_Scenes : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
         }else
          {
+             //loading to the menu if game is finished
             animator.SetBool("Objective", false);
             animator.SetBool("Datalog", false);
             animator.SetBool("EndofConvo", false);

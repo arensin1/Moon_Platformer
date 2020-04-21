@@ -10,7 +10,7 @@ public class music_on_off : MonoBehaviour
     
     void Start()
     {
-      
+        //Play music if it's set to on on previous scene
          if(DataHolder.MusicOn)
         {
             music.Play();
@@ -19,18 +19,18 @@ public class music_on_off : MonoBehaviour
         }
         else
         {
+            //Pause music if it's set to off on previous scene
             music.Pause();
             DataHolder.MusicOn = false;
             
         }
+        
     }
 
     void Update(){
         
-        if(animator.GetBool("EndofConvo") && !animator.GetBool("Notyet")){
-            music.volume = Mathf.Lerp(music.volume, 0f,5f);
-        }
-        else if(pause_menu.isOn || !animator.GetBool("EndofConvo"))
+        //setting volumes
+        if(pause_menu.isOn || !animator.GetBool("EndofConvo"))
         {
             music.volume = 0.15f;
         }
@@ -44,6 +44,7 @@ public class music_on_off : MonoBehaviour
 
     public void MusicSwitch()
     {
+        //abillity to switch music off and on
         if(DataHolder.MusicOn)
         {
             music.Pause();

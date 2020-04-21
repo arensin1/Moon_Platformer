@@ -4,7 +4,8 @@ using UnityEngine;
 
 public static class DataHolder 
 {
-    public static bool MusicOn = true;
-    public static int Lives = 3;
+    //holding static data that will be consistent through scenes
+    public static bool MusicOn = true;// check if music is on 
+    public static int Lives = 3;// check on how many lives we have
     
 }
