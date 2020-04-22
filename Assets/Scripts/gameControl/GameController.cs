@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
 
     
     void Start(){
-        timeValue = 45f; // set timer
+        timeValue = 60f; // set timer
        
     }
   

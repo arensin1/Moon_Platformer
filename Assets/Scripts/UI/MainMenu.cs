@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour
     public void QuitGame ()
     {
         //quiting application
-        //UnityEditor.EditorApplication.isPlaying = false; //for editor
+        UnityEditor.EditorApplication.isPlaying = false; //for editor
         Application.Quit(); //for built game
     }
 }

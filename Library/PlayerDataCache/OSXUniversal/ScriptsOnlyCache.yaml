@@ -34,10 +34,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1986,4 +1984,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LosingScene.unity
   - Assets/Scenes/WInningScene.unity
   - Assets/Scenes/Credits.unity
-  playerPath: /Users/alexrensing/Documents/projects/prototypeECS/Game Build/MOON_Game.app
+  playerPath: /Users/youngjie/Desktop/forVideo.app
