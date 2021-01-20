@@ -6,6 +6,7 @@ README
 3. When you fall down from the tiles, it’s okay. You have 3 lives for each level, and you can see the remaining life counter at the top right corner.
 4. Sometimes, the objectives may require you to press e key. A message will appear in the screen when player should do so.
 
+Link to game: https://connect.unity.com/mg/other/moon-wenx
 
 *References
 -Our lab materials regarding camera moving and player movement
